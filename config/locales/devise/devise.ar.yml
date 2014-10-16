@@ -1,0 +1,88 @@
+#   Copyright (c) 2010-2013, Diaspora Inc.  This file is
+#   licensed under the Affero General Public License version 3 or later.  See
+#   the COPYRIGHT file.
+
+
+
+ar:
+  devise:
+    confirmations:
+      confirmed: "تم تأكيد حسابك، وتسجيل دخولك"
+      new:
+        resend_confirmation: "أعِد إرسال تعليمات التأكيد"
+      send_instructions: "ستصلك في بضع دقائق رسالة إلكترونية تحوي تعليمات تأكيد الحساب الخاص بك"
+    failure:
+      inactive: "لم يتم تفعيل حسابك بعد"
+      invalid: "اسم المستخدم غير صحيح أو كلمة المرور غير صحيحة."
+      invalid_token: "رمزالتعرفة غير صحيح"
+      locked: "تم قفل حسابك"
+      timeout: "إنقضت مدة جلستك، الرجاء تسجيل الدخول من جديد للمتابعة"
+      unauthenticated: "عليك تسجيل الدخول او التسجيل قبل المتابعة."
+      unconfirmed: "يجب تأكيد حسابك قبل المتابعة."
+    invitations:
+      invitation_token_invalid: "نأسف! هذه الدعوة غير صالحة."
+      send_instructions: "تم إرسال دعوتك"
+      updated: "تم إنشاء كلمة المرور بنجاح، أنت الآن متصل"
+    mailer:
+      confirmation_instructions:
+        confirm: "أكِد حسابي"
+        subject: "تعليمات التأكيد"
+        you_can_confirm: "يمكنك تأكيد حسابك عبر الرابط التالي"
+      hello: "مرحبا %{email}!"
+      inviter:
+        accept_at: ", %{url}, يمكنك قبولها عبر الرابط التالي"
+        has_invited_you: "%{name} يدعوك للإنضمام إلى دياسبرا"
+        have_invited_you: "%{names} يدعونك للإنضمام إلى دياسبرا"
+      reset_password_instructions:
+        change: "غيِر كلمة المرور"
+        ignore: "إذا لم تكن من طلب هذا، رجاء تجاهل هذا البريد"
+        someone_requested: "أحدهم طلب رابطا لتغيير كلمة مرورك, ويمكنك فعل هذا عبر الرابط الآتي"
+        subject: "تعليمات إعادة إدخال كلمة المرور"
+        wont_change: "كلمة مرورك لن تتغير قبل أن تنقر الرابط التالي وتدخل كلمة مرور جديدة"
+      unlock_instructions:
+        account_locked: "لقد تم حظر حسابك ظرفيا بسبب العدد المفرط من محاولات الدخول الفاشلة"
+        click_to_unlock: "انقر الرابط بأدناه لإعادة فتح حسابك:"
+        subject: "تعليمات إعادة فتح حسابك"
+        unlock: "أعد فتح حسابي"
+      welcome: "مرحبا %{email} !"
+    passwords:
+      edit:
+        change_password: "غيِر كلمة المرور"
+      new:
+        forgot_password: "هل نسيت كلمة المرور؟"
+        no_account: "هذا البريد الإلكتروني غير مرتبط بأي حساب. إذا كنت تنتظر دعوة, فنحن نقوم بتوزيعها بأسرع وسيلة لتصل الجميع"
+        send_password_instructions: "أعِد تعيين كلمة المرور"
+      send_instructions: "ستصلك رسالة إلكترونية في بضع دقائق تحوي تعليمات إعادة تعيين كلمة المرور الخاصة بك"
+      updated: "تم تغيير كلمة السر خاصتك بنجاح. أنت الآن متصل"
+    registrations:
+      destroyed: ".وداعا! تم إلغاء حسابك بنجاح. ونأمل أن نراكم مرة أخرى قريبا"
+      signed_up: ".تمت عملية تسجيلك بنجاح. ستصلك رسالة إلكترونية حال تفعيله"
+      updated: "قمت بتحديث حسابك بنجاح."
+    sessions:
+      new:
+        login: "تسجيل الدخول"
+        modern_browsers: "تدعم المتصفحات الحديثة فقط."
+        password: "كلمة المرور"
+        remember_me: "تذكرني"
+        sign_in: "تسجيل الدخول"
+        username: "إسم المستخدم"
+      signed_in: "تم تسجيل الدخول بنجاح."
+      signed_out: "تم تسجيل الخروج بنجاح"
+    shared:
+      links:
+        forgot_your_password: "نسيت كلمة المرور؟"
+        receive_confirmation: "لم تصلك تعليمات تأكيد حسابك؟"
+        receive_unlock: "لم تصلك تعليمات إعادة فتح حسابك؟"
+        sign_in: "تسجيل الدخول"
+        sign_up: "التسجيل"
+        sign_up_closed: "التسجيلات مغلقة حاليا"
+    unlocks:
+      new:
+        resend_unlock: "أعِد إرسال تعليمات إعادة فتح حسابك"
+      send_instructions: "ستصلك رسالة إلكترونية خلال دقائق تحتوي على تعليمات إعادة فتح حسابك"
+      unlocked: "تم إعادة فتح حسابك بنجاح، أنت الآن متصل"
+  errors:
+    messages:
+      already_confirmed: "تم التأكيد مسبقا"
+      not_found: "غير موجود"
+      not_locked: "لم يكن مغلقا"

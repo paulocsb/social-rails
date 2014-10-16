@@ -1,0 +1,89 @@
+#   Copyright (c) 2010-2013, Diaspora Inc.  This file is
+#   licensed under the Affero General Public License version 3 or later.  See
+#   the COPYRIGHT file.
+
+
+
+bs:
+  devise:
+    confirmations:
+      confirmed: "Vaš račun je uspješno potvrđen. Sada ste prijavljeni."
+      new:
+        resend_confirmation: "Ponovo pošalji uputstva za potvrdu"
+      send_instructions: "Dobit ćete e-mail sa uputstvima kako da potvrdite vaš račun za par minuta."
+    failure:
+      inactive: "Vaš račun još uvijek nije aktiviran."
+      invalid: "Nevažeće korisničko ime ili šifra."
+      invalid_token: "Nevažeći autentikacijski znakovi"
+      locked: "Vaš račun je zaključan."
+      not_found_in_database: "Nevažeći email ili šifra."
+      timeout: "Vaša sesija je istekla, molimo prijavite se ponovo da bi nastavili."
+      unauthenticated: "Morate se prijaviti ili upisati prije nastavljanja."
+      unconfirmed: "Morate potvrditi vaš račun prije nego nastavite."
+    invitations:
+      invitation_token_invalid: "Naša izvinjena! Znakovi pozivnice nisu važeći."
+      send_instructions: "Vaša pozivnica je poslata."
+      updated: "Vaša šifra je uspješno postavljena. Sada ste prijavljeni."
+    mailer:
+      confirmation_instructions:
+        confirm: "Potvrdi moj račun"
+        subject: "Uputstva za potvrdu"
+        you_can_confirm: "Možete potvrditi svoj račun sa vezom ispod:"
+      hello: "Zdravo %{email}!"
+      inviter:
+        accept_at: "na %{url}, možete prihvatiti vezom ispod."
+        has_invited_you: "%{name}"
+        have_invited_you: "%{names} su vas pozvali da se pridružite na Diasporu"
+      reset_password_instructions:
+        change: "Promijeni moju šifru"
+        ignore: "Ako niste ovo zahtjevali, molimo ignorišite ovaj email."
+        someone_requested: "Neko je zahtjevao vezu da promijenite vašu šifru, a to možete uraditi sa vezom ispod."
+        subject: "Uputstva za resetovanje šifre"
+        wont_change: "Vaša šifra se neće promijeniti dok ne pristupite vezu iznad i kreirate novi."
+      unlock_instructions:
+        account_locked: "Vaš račun je zaključan zbog prekomjernog broja neuspješnih pokušaja prijave."
+        click_to_unlock: "Kliknite na vezu ispod da bi otključali vaš račun."
+        subject: "Otključaj Uputstva"
+        unlock: "Otključaj moj račun"
+      welcome: "Dobrodošli %{email}!"
+    passwords:
+      edit:
+        change_password: "Promjeni moju šifru"
+      new:
+        forgot_password: "Zaboravili ste šifru?"
+        no_account: "Ne postoji račun sa ovom e-mail adresom.  Ako očekujete pozivnicu, šaljemo ih čim prije."
+        send_password_instructions: "Pošalji mi uputstva za resetovanje šifre"
+      send_instructions: "Dobit ćete e-mail sa uputstvima kako da resetujete vašu šifru za par minuta."
+      updated: "Vaša šifra je uspješno promijenjena. Sada ste prijavljeni."
+    registrations:
+      destroyed: "Ćao! Vaš račun je uspješno otkazan. Nadamo se da ćemo vas vidjeti uskoro."
+      signed_up: "Uspješno ste se registrovali. Ako je uključena opcija, poslana je potvrda na vaš e-mail."
+      updated: "Uspješno ste ažurirali vaš račun."
+    sessions:
+      new:
+        login: "Prijava"
+        modern_browsers: "podržava samo novije preglednike."
+        password: "Šifra"
+        remember_me: "Zapamti me"
+        sign_in: "Prijavi se"
+        username: "Korisničko ime"
+      signed_in: "Uspješna prijava."
+      signed_out: "Uspješna odjava."
+    shared:
+      links:
+        forgot_your_password: "Zaboravili ste šifru?"
+        receive_confirmation: "Niste primili uputstva za potvrdu?"
+        receive_unlock: "Niste primili uputstva za otključavanje?"
+        sign_in: "Prijavi se"
+        sign_up: "Registracija"
+        sign_up_closed: "Otvorene prijave su zatvorene trenutno."
+    unlocks:
+      new:
+        resend_unlock: "Ponovo pošalji uputstva za otključavanje"
+      send_instructions: "Primit ćete email sa upustvima o tome kako otključati vaš račun za nekoliko minuta."
+      unlocked: "Vaš račun je uspješno otključan. Sada ste prijavljeni."
+  errors:
+    messages:
+      already_confirmed: "je već potvrđeno"
+      not_found: "nije pronađeno"
+      not_locked: "nije zaključano"

@@ -1,0 +1,38 @@
+.tag {
+  display: inline-block;
+  font-weight: bold;
+  &:hover {
+    text-decoration: underline;
+    background-color: lighten($blue, 47%);
+  }
+}
+
+a.tag { color: $blue; }
+
+h1.tag {
+  border-bottom: 2px dotted $blue;
+  &:hover { border-bottom: 2px dotted $blue; }
+}
+
+.info {
+  .tag {
+    background-color: #efefef;
+    color: $text-grey;
+    border-bottom: 1px dotted $border-dark-grey;
+    &:hover { border-bottom: 1px solid $border-dark-grey; }
+  }
+}
+
+#tags_show {
+  .span3 {
+    border-right: 1px solid $border-grey;
+    .side_stream #people_stream {
+      .name { display: block; }
+      .name, .diaspora_handle, .tags {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+}

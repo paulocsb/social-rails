@@ -1,0 +1,88 @@
+#   Copyright (c) 2010-2013, Diaspora Inc.  This file is
+#   licensed under the Affero General Public License version 3 or later.  See
+#   the COPYRIGHT file.
+
+
+
+vi:
+  devise:
+    confirmations:
+      confirmed: "Tài khoản của bạn đã được xác nhận. Bạn đã đăng nhập."
+      new:
+        resend_confirmation: "Gửi lại chỉ dẫn xác nhận"
+      send_instructions: "Bạn sẽ nhận được thư điện tử chứa chỉ dẫn xác nhận tài khoản trong ít phút nữa."
+    failure:
+      inactive: "Tài khoản của bạn chưa được kích hoạt."
+      invalid: "Tên người dùng hoặc mật khẩu không đúng."
+      invalid_token: "Khoá xác thực không hợp lệ."
+      locked: "Tài khoản của bạn đã bị khoá."
+      timeout: "Phiên đăng nhập đã hết hạn, hãy đăng nhập lại để tiếp tục."
+      unauthenticated: "Bạn cần đăng nhập hoặc đăng kí để tiếp tục."
+      unconfirmed: "Bạn cần phải xác nhận tài khoản trước khi tiếp tục."
+    invitations:
+      invitation_token_invalid: "Xin cáo lỗi! Khoá mời không hợp lệ."
+      send_instructions: "Thư mời của bạn đã được gửi."
+      updated: "Thiết lập mật khẩu thành công. Bạn đã đăng nhập."
+    mailer:
+      confirmation_instructions:
+        confirm: "Xác nhận tài khoản của tôi"
+        subject: "Chỉ dẫn xác nhận"
+        you_can_confirm: "Bạn có thể xác nhận tài khoản thông qua địa chỉ sau:"
+      hello: "Xin chào %{email}!"
+      inviter:
+        accept_at: "tại %{url}, bạn có thể chấp nhận nó qua đường dẫn bên dưới."
+        has_invited_you: "%{name}"
+        have_invited_you: "%{names} đã mời bạn tham gia Diaspora"
+      reset_password_instructions:
+        change: "Đổi mật khẩu"
+        ignore: "Nếu bạn không yêu cầu, hãy bỏ qua thư này."
+        someone_requested: "Ai đó đã yêu cầu một liên kết để đổi mật khẩu của bạn, và bạn có thể đổi mật khẩu thông qua liên kết dưới đây."
+        subject: "Chỉ dẫn khôi phục mật khẩu"
+        wont_change: "Mật khẩu của bạn sẽ không được thay đổi cho đến khi bạn truy cập liên kết trên và tạo mật khẩu mới."
+      unlock_instructions:
+        account_locked: "Tài khoản của bạn bị khoá do đăng nhập thất bại quá số lần quy định."
+        click_to_unlock: "Nhấn vào liên kết bên dưới để mở khoá tài khoản:"
+        subject: "Chỉ dẫn mở khoá"
+        unlock: "Mở khoá tài khoản"
+      welcome: "Chào mừng %{email}!"
+    passwords:
+      edit:
+        change_password: "Đổi mật khẩu"
+      new:
+        forgot_password: "Quên mật khẩu?"
+        no_account: "Không có tài khoản nào với địa chỉ thư điện tử này. Nếu bạn đang chờ để được mời, chúng tôi sẽ cố gắng sớm nhất có thể"
+        send_password_instructions: "Gửi cho tôi hướng dẫn thiết đặt lại mật khẩu"
+      send_instructions: "Bạn sẽ nhận được thư chứa chỉ dẫn cách thiết lập lại mật khẩu trong ít phút nữa."
+      updated: "Đã đổi mật khẩu. Bạn đã đăng nhập."
+    registrations:
+      destroyed: "Tạm biệt! Tài khoản của bạn đã được huỷ thành công. Chúng tôi hy vọng sẽ gặp lại bạn sớm."
+      signed_up: "Bạn đã đăng nhập thành công. Nếu được bật, một thư xác nhận sẽ được gửi cho bạn."
+      updated: "Bạn đã cập nhật tài khoản thành công."
+    sessions:
+      new:
+        login: "Đăng nhập"
+        modern_browsers: "chỉ hỗ trợ những trình duyệt hiện đại."
+        password: "Mật khẩu"
+        remember_me: "Ghi nhớ"
+        sign_in: "Đăng nhập"
+        username: "Tên người dùng"
+      signed_in: "Đăng nhập thành công."
+      signed_out: "Đăng xuất thành công."
+    shared:
+      links:
+        forgot_your_password: "Quên mật khẩu?"
+        receive_confirmation: "Không nhận được chỉ dẫn xác nhận?"
+        receive_unlock: "Không nhận được chỉ dẫn mở khoá?"
+        sign_in: "Đăng nhập"
+        sign_up: "Đăng kí"
+        sign_up_closed: "Hiện không thể đăng kí mở."
+    unlocks:
+      new:
+        resend_unlock: "Gửi lại chỉ dẫn mở khoá"
+      send_instructions: "Bạn sẽ nhận được thư chứa chỉ dẫn mở khoá tài khoản trong ít phút nữa."
+      unlocked: "Tài khoản của bạn đã được mở khoá. Bạn đã đăng nhập."
+  errors:
+    messages:
+      already_confirmed: "đã được xác nhận"
+      not_found: "không tìm thấy"
+      not_locked: "không khoá"

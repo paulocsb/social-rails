@@ -1,0 +1,60 @@
+.container-fluid#notifications_container
+  .row-fluid
+    .span3
+      %h3
+        = t('.notifications')
+      %ul.nav.nav-tabs.nav-stacked
+        %li{ :class => ('active' unless params[:type] && @grouped_unread_notification_counts.has_key?(params[:type])) }
+          %a{ :href => '/notifications' + (params[:show] == 'unread' ? '?show=unread' : '') }
+            %span.pull-right.badge{:class => (@unread_notification_count > 0 ? 'badge-important' : 'badge-default')}
+              = @unread_notification_count
+            = t('.all_notifications')
+        - @grouped_unread_notification_counts.each do |key, count|
+          %li{ :class => ('active' if params[:type] == key), :data => { :type => key } }
+            %a{ :href => '/notifications?type=' + key + (params[:show] == 'unread' ? '&show=unread' : '') }
+              %span.pull-right.badge{ :class => (count > 0 ? 'badge-important' :'badge-default') }
+                = count
+              - case key
+                - when 'also_commented', 'comment_on_post'
+                  %i.entypo.comment
+                - when 'liked'
+                  %i.entypo.heart
+                - when 'mentioned'
+                  %span.mentionIcon
+                    @
+                - when 'reshared'
+                  %i.entypo.retweet
+                - when 'started_sharing'
+                  %i.entypo.add-user
+              = t('.'+key)
+
+    .span9.stream.notifications
+      .row-fluid.header
+        .span12
+          .btn-toolbar.pull-right
+            .btn-group
+              %a.btn.btn-default{ :class => ('active' unless params[:show] == 'unread'), :href => '/notifications' + (params[:type] ? '?type=' + params[:type] : '') }
+                = t('.show_all')
+              %a.btn.btn-default{ :class => ('active' if params[:show] == 'unread'), :href => '/notifications?show=unread' + (params[:type] ? '&type=' + params[:type] : '') }
+                = t('.show_unread')
+            %a.btn.btn-default{:href => read_all_notifications_path(:type => params[:type] ), :class => ('disabled' unless @unread_notification_count > 0)}
+              -if params[:type]
+                = t('.mark_all_shown_as_read')
+              -else
+                = t('.mark_all_as_read')
+      - @group_days.each do |day, notes|
+        .day_group.row-fluid
+          .date.span2
+            .day= the_day(day.split(' '))
+            .month= the_month(day.split(' '))
+
+          .notifications_for_day.span10
+            - notes.each do |note|
+              = render :partial => 'notifications/notification', :locals => { :note => note }
+
+      = will_paginate @notifications, :renderer => WillPaginate::ActionView::BootstrapLinkRenderer
+
+:javascript
+  $(document).ready(function(){
+    new app.views.Notifications({ el: '#notifications_container' });
+  });

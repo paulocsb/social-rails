@@ -1,0 +1,93 @@
+#   Copyright (c) 2010-2013, Diaspora Inc.  This file is
+#   licensed under the Affero General Public License version 3 or later.  See
+#   the COPYRIGHT file.
+
+
+
+sk:
+  devise:
+    confirmations:
+      confirmed: "Tvoj účet bol úspešne potvrdený. Teraz si prihlásený (-á)."
+      new:
+        resend_confirmation: "Znova mi pošlite pokyny na potvrdenie"
+      send_instructions: "O niekoľko minút dostaneš e-mail s pokynmi na potvrdenie svojho účtu."
+    failure:
+      inactive: "Tvoj účet ešte nebol aktivovaný."
+      invalid: "Neplatné používateľské meno alebo heslo."
+      invalid_token: "Neplatné identifikačné číslo."
+      locked: "Tvoj účet je zamknutý."
+      not_found_in_database: "Neplatný e-mail alebo neplatné heslo"
+      timeout: "Čas tvojho sedenia uplynul; ak chceš pokračovať, znovu sa prihlás, prosím."
+      unauthenticated: "Ak chceš pokračovať, musíš sa prihlásiť alebo zaregistrovať."
+      unconfirmed: "Predtým, ako budeš môcť pokračovať, musíš potvrdiť svoj účet."
+    invitations:
+      invitation_token_invalid: "Ospravedlňujeme sa. Toto číslo pozvánky nie je platné."
+      send_instructions: "Tvoja pozvánka bola odoslaná."
+      updated: "Tvoje heslo bolo úspešné nastavené. Teraz si prihlásený (-á)."
+    mailer:
+      confirmation_instructions:
+        confirm: "Potvrdiť svoj účet"
+        subject: "Pokyny na potvrdenie"
+        you_can_confirm: "Svoj účet môžeš potvrdiť kliknutím na tento odkaz:"
+      hello: "Ahoj %{email}!"
+      inviter:
+        accept_at: "Kliknutím na odkaz na stránku %{url} ju môžeš prijať."
+        has_invited_you: "%{name}"
+        have_invited_you: "%{names} ťa pozvali na diasporu*"
+      reset_password_instructions:
+        change: "Zmeniť si heslo"
+        ignore: "Ak si o to nežiadal(a), tento e-mail, prosím, ignoruj."
+        someone_requested: "Nieko požiadal o zmenu tvojho hesla. Ak si to bol(a) ty, môžeš to urobiť kliknutím na tento odkaz."
+        subject: "Pokyny na zmenu hesla"
+        wont_change: "Tvoje heslo sa nezmení, kým neklikneš na odkaz, ktorý je napísaný vyššie, a nevytvoríš si nové."
+      unlock_instructions:
+        account_locked: "Tvoj účet bol zablokovaný kvôli vysokému počtu neúspešných prihlásení."
+        click_to_unlock: "Klikni na tento odkaz a tvoj účet sa odomkne:"
+        subject: "Pokyny na odomknutie"
+        unlock: "Odomknúť môj účet"
+      welcome: "Vitaj %{email}!"
+    passwords:
+      edit:
+        change_password: "Zmeniť moje heslo"
+        confirm_password: "Potvrdenie hesla"
+        new_password: "Nové heslo"
+      new:
+        email: "E-mailová adresa"
+        forgot_password: "Zabudol (-la) si heslo?"
+        no_account: "Účet s takouto e-mailovou adresou neexistuje"
+        reset_password: "Obnoviť heslo"
+        send_password_instructions: "Pošlite mi pokyny na zmenu hesla"
+      send_instructions: "O niekoľko minút dostaneš e-mail s pokynmi, ako si zmeniť heslo."
+      updated: "Tvoje heslo bolo úspešne zmenené. Teraz si prihlásený (-á)."
+    registrations:
+      destroyed: "Maj sa! Tvoj účet bol úspešne zrušený. Dúfame, že ťa čoskoro znova stretneme."
+      signed_up: "Úspešne si sa zaregistroval(a). Ak je táto možnosť aktivovaná, potvrdíme ti to e-mailom."
+      updated: "Úspešne si si aktualizoval(a) účet."
+    sessions:
+      new:
+        login: "Prihlásiť sa"
+        modern_browsers: "podporuje len moderné prehliadače."
+        password: "Heslo"
+        remember_me: "Pamätať si ma"
+        sign_in: "Prihlásiť sa"
+        username: "Používateľské meno"
+      signed_in: "Úspešne si sa prihlásil(a)."
+      signed_out: "Úspešne si sa odhlásil(a)."
+    shared:
+      links:
+        forgot_your_password: "Zabudol (-la) si heslo?"
+        receive_confirmation: "Nedostal(a) si pokyny na potvrdenie?"
+        receive_unlock: "Nedostal(a) si pokyny na odomknutie účtu?"
+        sign_in: "Prihlásiť sa"
+        sign_up: "Zaregistrovať sa"
+        sign_up_closed: "Momentálne sú ďalšie registrácie pozastavené."
+    unlocks:
+      new:
+        resend_unlock: "Znova poslať pokyny na odomknutie účtu"
+      send_instructions: "O niekoľko minút dostaneš e-mail s pokynmi, ako si odomknúť svoj účet."
+      unlocked: "Tvoj účet bol úspešne odomknutý. Teraz si prihlásený (-á)."
+  errors:
+    messages:
+      already_confirmed: "už bol potvrdený"
+      not_found: "nenašlo sa"
+      not_locked: "nebol zamknutý"

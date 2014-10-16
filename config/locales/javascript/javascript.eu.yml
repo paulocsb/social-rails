@@ -1,0 +1,132 @@
+#   Copyright (c) 2010-2013, Diaspora Inc.  This file is
+#   licensed under the Affero General Public License version 3 or later.  See
+#   the COPYRIGHT file.
+
+
+
+eu:
+  javascripts:
+    aspect_dropdown:
+      add_to_aspect: "Adiskidea gehitu"
+      all_aspects: "Arlo guztiak"
+      error: "Ezin izan da <%= name %>(r)ekin harremanetan hasi. Isiltzen ari zara erabiltzaile hori?"
+      select_aspects: "Arloak aukeratu"
+      started_sharing_with: "<%= name %>(r)ekin harremanetan hasi zara!"
+      stopped_sharing_with: "Jada ez zaude <%= name %>(r)ekin harremanetan."
+      toggle:
+        one: "Arlo <%= count %>ean"
+        other: "<%= count %> arlotan"
+        zero: "Arloak hautatu"
+    aspect_navigation:
+      deselect_all: "Guztiak deshautatu"
+      no_aspects: "Ez da arlorik hautatu"
+      select_all: "Guztiak hautatu"
+    comments:
+      hide: "iruzkinak ezkutatu"
+      show: "iruzkin guztiak erakutsi"
+    confirm_dialog: "Ziur al zaude?"
+    delete: "Ezabatu"
+    failed_to_like: "Huts gustoko egitean!"
+    failed_to_post_message: "Huts egin du mezuaren bidalketak!"
+    getting_started:
+      alright_ill_wait: "Beno, itxarongo dut."
+      hey: "Aizu, <%= name %>!"
+      no_tags: "Aizu, ez duzu etiketarik jarraitzen! Jarraitu hala ere?"
+      preparing_your_stream: "Zure kronologia pertsonalizatua prestatzen..."
+    header:
+      admin: "Kudeatu"
+      close: "itxi"
+      contacts: "Lagunak"
+      home: "Hasiera"
+      log_out: "Atera"
+      mark_all_as_read: "Guztiak irakurri gisa markatu"
+      notifications: "Jakinarazpenak"
+      profile: "Profila"
+      recent_notifications: "Jakinarazpen Berrienak"
+      search: "Bilatu"
+      settings: "Ezarpenak"
+      view_all: "Guztiak ikusi"
+    ignore: "Isildu"
+    infinite_scroll:
+      no_more: "Mezu gehiagorik ez dago."
+    my_activity: "Nire Jarduera"
+    my_stream: "Kronologia"
+    people:
+      not_found: "eta ez da inor aurkitu..."
+    photo_uploader:
+      looking_good: "Ene bada, oso jatorra dirudizu!"
+    publisher:
+      at_least_one_aspect: "Gutxienez arlo batean partekatu behar duzu"
+      limited: "Mugatua - zure mezua aukeratu duzun jendeak bakarrik ikusiko du"
+      public: "Publikoa - zure mezua edonork ikusi ahalko du, bai eta bilaketa zerbitzuetan agertu ere"
+    reshares:
+      duplicate: "Oso ona, e? Dagoeneko birpartekatu duzu mezu hori!"
+      post: "Birpartekatu nahi al duzu <%= name %>(r)en mezua?"
+      successful: "Mezua arrakastaz birpartekatu da!"
+    search_for: "Bilatu <%= name %>"
+    show_more: "erakutsi gehiago"
+    stream:
+      comment: "Iruzkindu"
+      follow: "Jarraitu"
+      hide: "Ezkutatu"
+      hide_nsfw_posts: "Ezkutatu #nsfw mezuak"
+      like: "Gustuko dut"
+      likes:
+        few: "<%= count %>(e)k gustuko dute"
+        many: "<%= count %>(e)k gustuko dute"
+        one: "<%= count %>ek gustuko du"
+        other: "<%= count %>(e)k gustuko dute"
+        two: "<%= count %>(e)k gustuko dute"
+        zero: "<%= count %>(e)k gustuko dute"
+      limited: "Mugatua"
+      more_comments:
+        few: "Erakutsi <%= count %> iruzkin gehiago"
+        many: "Erakutsi <%= count %> iruzkin gehiago"
+        one: "Erakutsi iruzkin <%= count %> gehiago"
+        other: "Erakutsi <%= count %> iruzkin gehiago"
+        two: "Erakutsi <%= count %> iruzkin gehiago"
+        zero: "Erakutsi <%= count %> iruzkin gehiago"
+      original_post_deleted: "Jatorrizko mezua egileak ezabatu du."
+      public: "Publikoa"
+      reshare: "Birpartekatu"
+      reshares:
+        few: "<%= count %> Birpartekaketa"
+        many: "<%= count %> Birpartekaketa"
+        one: "Birpartekaketa <%= count %> "
+        other: "<%= count %> Birpatekaketa"
+        two: "<%= count %> Birpatekaketa"
+        zero: "<%= count %> Birpatekaketa"
+      show_nsfw_post: "Mezua erakutsi"
+      show_nsfw_posts: "Guztiak erakutsi"
+      unfollow: "Ez jarraitu"
+      unlike: "Ez dut gustuko"
+    tags:
+      wasnt_that_interesting: "Beno, suposatzen dut #<%= tagName %> ez zela oso interesgarria..."
+    timeago:
+      day: "egun bat"
+      days: "%d egun"
+      hour: "ordu bat"
+      hours: "%d ordu"
+      minute: "minutu bat"
+      minutes: "%d minutu"
+      month: "hilabete bat"
+      months: "%d hilabete"
+      prefixAgo: "duela"
+      prefixFromNow: ""
+      seconds: "minutu bat baino gutxiago"
+      suffixAgo: ""
+      suffixFromNow: "barru"
+      year: "urte bat"
+      years: "%d urte"
+    videos:
+      unknown: "Bideo mota ezezaguna"
+      watch: "Ikusi bideo hau <%= provider %>(e)n"
+    viewer:
+      comment: ""
+      follow_post: ""
+      home: "HASIERA"
+      like: ""
+      reshare: ""
+      reshared: ""
+      stop_following_post: ""
+      unlike: ""

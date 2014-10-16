@@ -1,0 +1,11 @@
+-#   Copyright (c) 2010-2012, Diaspora Inc.  This file is
+-#   licensed under the Affero General Public License version 3 or later.  See
+-#   the COPYRIGHT file.
+
+= javascript_include_tag :home
+
+.container-fluid#bookmarklet
+  .row-fluid
+    %h4
+      =t('bookmarklet.post_something')
+    = render :partial => 'publisher/publisher', :locals => { :aspect => :profile, :selected_aspects => @aspects,  :aspect_ids => @aspect_ids }

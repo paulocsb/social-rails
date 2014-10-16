@@ -1,0 +1,50 @@
+-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+-#   licensed under the Affero General Public License version 3 or later.  See
+-#   the COPYRIGHT file.
+
+- content_for :page_title do
+  = t('search')
+
+- content_for :head do
+  = javascript_include_tag 'contact-list'
+
+.container-fluid#people_search
+  .row-fluid
+    .page-header
+      = search_header
+  .row-fluid
+    .span8
+      #people_stream.stream
+        - if @hashes.empty?
+          - if @background_query.present?
+
+            / TODO this is gross, and should be extracted!
+            :javascript
+              $(document).ready( function() {
+                List.startSearchDelay('#{@background_query}')
+              } );
+
+            %p
+              = t('.searching')
+              = image_tag('static-loader.png', :class => 'loader')
+          - else
+            %p
+              = t('.no_one_found')
+        - else
+          - for hash in @hashes
+            = render :partial => 'people/person', :locals => hash
+
+          = will_paginate(@people)
+
+        %a{:id=>"back-to-top", :title=>"#{t('layouts.application.back_to_top')}", :href=>"#"}
+          &#8679;
+
+    .span4
+      - if AppConfig.settings.invitations.open?
+        %h4
+          = t('.couldnt_find_them')
+        %p
+          = t('.search_handle')
+        %h4
+          = t('.send_invite')
+        = render "shared/invitations"

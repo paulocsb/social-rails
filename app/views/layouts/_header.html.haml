@@ -1,0 +1,21 @@
+-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+-#   licensed under the Affero General Public License version 3 or later.  See
+-#   the COPYRIGHT file.
+
+%header
+  - unless current_user
+    .container{style: "position:relative;"}
+      = link_to content_tag(:div, nil, class: 'diaspora_header_logo branding-header-logo'), root_path
+
+      %ul#landing_nav
+        - unless current_page?(controller: :registrations, action: :new)
+          %li= link_to t('devise.shared.links.sign_up'), new_user_registration_path, class: 'login'
+        %li= link_to t('devise.shared.links.sign_in'), new_user_session_path, class: 'login'
+      #lightbox
+        #lightbox-content
+          %a#lightbox-close-link(href='#')
+            [x]
+            =t('javascripts.header.close')
+          %img#lightbox-image
+          #lightbox-imageset
+      #lightbox-backdrop

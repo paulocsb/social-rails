@@ -1,0 +1,93 @@
+#   Copyright (c) 2010-2013, Diaspora Inc.  This file is
+#   licensed under the Affero General Public License version 3 or later.  See
+#   the COPYRIGHT file.
+
+
+
+nl:
+  devise:
+    confirmations:
+      confirmed: "Je account is geactiveerd. Je bent nu ingelogd."
+      new:
+        resend_confirmation: "Stuur bevestigingsinstructies nogmaals"
+      send_instructions: "Je ontvangt binnen enkele minuten een e-mail met instructies om je account te activeren."
+    failure:
+      inactive: "Je account is nog niet geactiveerd."
+      invalid: "Gebruikersnaam of wachtwoord ongeldig."
+      invalid_token: "Ongeldig authenticatietoken."
+      locked: "Je account is geblokkeerd."
+      not_found_in_database: "Ongeldig e-mailadres of wachtwoord."
+      timeout: "Je sessie is verlopen. Log opnieuw in om verder te gaan."
+      unauthenticated: "Log in of registreer om verder te gaan."
+      unconfirmed: "Activeer je account om verder te gaan."
+    invitations:
+      invitation_token_invalid: "Onze excuses! Die uitnodigingstoken is ongeldig."
+      send_instructions: "Je uitnodiging is verzonden."
+      updated: "Wachtwoord succesvol veranderd. Je bent nu ingelogd."
+    mailer:
+      confirmation_instructions:
+        confirm: "Bevestig mijn account"
+        subject: "Bevestigingsinstructies"
+        you_can_confirm: "Je kunt je account bevestigen via onderstaande link:"
+      hello: "Hallo %{email}!"
+      inviter:
+        accept_at: "op %{url}, je kunt deze accepteren via onderstaande link."
+        has_invited_you: "%{name}"
+        have_invited_you: "%{names} heeft je uitgenodigd om lid te worden van diaspora*"
+      reset_password_instructions:
+        change: "Wijzig mijn wachtwoord"
+        ignore: "Als je hier niet om hebt gevraagd kun je deze mail gewoon negeren."
+        someone_requested: "Iemand heeft een aanvraag gedaan om je wachtwoord te wijzigen. Je kunt dit doen via onderstaande link."
+        subject: "Wachtwoord reset instructies"
+        wont_change: "Je wachtwoord zal niet worden gewijzigd totdat je via bovenstaande link een nieuwe hebt gekozen."
+      unlock_instructions:
+        account_locked: "Je account is vergrendeld vanwege te veel mislukte aanmeldpogingen."
+        click_to_unlock: "Klik op onderstaande link om je account te ontgrendelen:"
+        subject: "Ontgrendelingsinstructies"
+        unlock: "Ontgrendel mijn account"
+      welcome: "Welkom %{email}!"
+    passwords:
+      edit:
+        change_password: "Wijzig mijn wachtwoord"
+        confirm_password: "Bevestig wachtwoord"
+        new_password: "Nieuw wachtwoord"
+      new:
+        email: "E-mailadres"
+        forgot_password: "Wachtwoord vergeten?"
+        no_account: "Er bestaat geen account met dit e-mailadres"
+        reset_password: "Herstel wachtwoord"
+        send_password_instructions: "Stuur mij instructies om mijn wachtwoord te resetten"
+      send_instructions: "Je ontvangt binnen enkele minuten een e-mail met instructies om je wachtwoord opnieuw in te stellen."
+      updated: "Je wachtwoord is veranderd. Je bent nu ingelogd."
+    registrations:
+      destroyed: "Tot ziens! Je account is succesvol verwijderd. We hopen je snel terug te zien."
+      signed_up: "Je bent succesvol geregistreerd. Indien aangevinkt is er een bevestiging naar je e-mail gestuurd."
+      updated: "Je account is succesvol geüpdate."
+    sessions:
+      new:
+        login: "Inloggen"
+        modern_browsers: "ondersteunt alleen moderne browsers."
+        password: "Wachtwoord"
+        remember_me: "Onthoud mij"
+        sign_in: "Log in"
+        username: "Gebruikersnaam"
+      signed_in: "Je bent succesvol ingelogd."
+      signed_out: "Je bent succesvol uitgelogd."
+    shared:
+      links:
+        forgot_your_password: "Wachtwoord vergeten?"
+        receive_confirmation: "Geen bevestigingsinstructies ontvangen?"
+        receive_unlock: "Geen ontgrendelinstructies ontvangen?"
+        sign_in: "Inloggen"
+        sign_up: "Registreer"
+        sign_up_closed: "Vrij registreren is momenteel niet mogelijk."
+    unlocks:
+      new:
+        resend_unlock: "Stuur ontgrendelinstructies nogmaals"
+      send_instructions: "Je ontvangt binnen enkele minuten een e-mail met instructies om je account te deblokkeren."
+      unlocked: "Je account is succesvol gedeblokkeerd. Je bent nu ingelogd."
+  errors:
+    messages:
+      already_confirmed: "is al geactiveerd"
+      not_found: "niet gevonden"
+      not_locked: "is niet geblokkeerd"

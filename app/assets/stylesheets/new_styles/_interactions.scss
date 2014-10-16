@@ -1,0 +1,32 @@
+.stream_container, #single-post-interactions {
+  .controls {
+    z-index: 6;
+    float: right;
+    .comment_report {
+      display: inline-block;
+      .icons-report {
+        height: 14px;
+        width: 14px;
+      }
+    }
+    .delete {
+      display: inline-block;
+      .icons-deletelabel {
+        height: 14px;
+        width: 14px;
+      }
+    }
+    & > a:hover {
+      text-decoration: none;
+    }
+  }
+
+  .stream_element, .comment, .photo, .stream_element:hover .comment {
+    .controls > a { @include opacity(0); }
+
+    &:hover .controls {
+      & > a { @include opacity(0.3); }
+      & > a:hover { @include opacity(1); }
+    }
+  }
+}

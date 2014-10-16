@@ -1,0 +1,89 @@
+#   Copyright (c) 2010-2013, Diaspora Inc.  This file is
+#   licensed under the Affero General Public License version 3 or later.  See
+#   the COPYRIGHT file.
+
+
+
+cs:
+  devise:
+    confirmations:
+      confirmed: "Váš účet byl uspěšně potvrzen. Nyní jste přihlášeni."
+      new:
+        resend_confirmation: "Zaslat instrukce o potvrzení"
+      send_instructions: "Během několika minut obdržíte email s instrukcemi k potvrzení vašeho účtu."
+    failure:
+      inactive: "Váš účet ještě nebyl aktivován."
+      invalid: "Neplatné uživatelské jméno nebo heslo."
+      invalid_token: "Neplatný autentizační token."
+      locked: "Váš účet je uzamčen."
+      not_found_in_database: "Chybný email nebo heslo."
+      timeout: "Vaše sezení vypršelo, pro pokračování se prosím přihlašte znovu."
+      unauthenticated: "Pro pokračování se musíte přihlásit nebo si vytvořit účet."
+      unconfirmed: "Před pokračováním musíte potvrdit svůj účet."
+    invitations:
+      invitation_token_invalid: "Omlouváme se! Tato pozvánka je neplatná."
+      send_instructions: "Vaše pozvánka byla odeslána."
+      updated: "Vaše heslo bylo úspěšně změněno. Nyní jste přihlášen."
+    mailer:
+      confirmation_instructions:
+        confirm: "Potvrdit můj účet"
+        subject: "Informace o potvrzení"
+        you_can_confirm: "Váš účet můžete potvrdit kliknutím na tento odkaz:"
+      hello: "Zdravím %{email}!"
+      inviter:
+        accept_at: "na %{url}, přijmout pozvání můžete pomocí odkazu níže."
+        has_invited_you: "%{name}"
+        have_invited_you: "%{names} vás pozvali, abyste vstoupili do Diaspory"
+      reset_password_instructions:
+        change: "Změnit moje heslo"
+        ignore: "Pokud nechcete potvrdit pozvání, tento e-mail prosím ignorujte."
+        someone_requested: "Vyžádali jste si změnu hesla, kterou můžete provést kliknutím na níže uvedený odkaz."
+        subject: "Instrukce ke změně hesla"
+        wont_change: "Vaše heslo není možné změnit, dokud nekliknete na uvedený odkaz a nevytvoříte si nové."
+      unlock_instructions:
+        account_locked: "Váš účet byl zablokovaný kvůli vysokému počtu neúspěšných přihlášení."
+        click_to_unlock: "Kliknutím na uvedený odkaz odemknete svůj účet:"
+        subject: "Instrukce k odemknutí účtu."
+        unlock: "Odemknout můj účet"
+      welcome: "Vítej %{email}!"
+    passwords:
+      edit:
+        change_password: "Změnit heslo"
+      new:
+        forgot_password: "Zapomněli jste heslo?"
+        no_account: "Neexistuje žádný účet s touto emailovou adresou. Pokud čekáte na pozvání, budeme je vydávat, co nejdříve to bude možné"
+        send_password_instructions: "Zaslat instrukce k nastavení nového hesla."
+      send_instructions: "Běhěm několika minut obdržíte email s instrukcemi ke změně hesla."
+      updated: "Vaše heslo bylo úspěšně změněno. Nyní jste přihlášeni"
+    registrations:
+      destroyed: "Sbohem! Váš účet byl úspěšně zrušen. Brzy naviděnou."
+      signed_up: "Úspěšně jste vytvořili účet. Pokud je tak server nastaven, byl vám zaslán potvrzovací email."
+      updated: "Úspěšně jste upravili svůj účet."
+    sessions:
+      new:
+        login: "Přihlásit"
+        modern_browsers: "podporuje pouze moderní prohlížeče."
+        password: "Heslo"
+        remember_me: "Zapamatovat si mě"
+        sign_in: "Přihlásit"
+        username: "Uživatelské jméno"
+      signed_in: "Přihlášení proběhlo úspěšně."
+      signed_out: "Odhlášení proběhlo úspěšně."
+    shared:
+      links:
+        forgot_your_password: "Zapomněli jste heslo?"
+        receive_confirmation: "Neobdrželi jste instrukce na potvrzení?"
+        receive_unlock: "Neobdrželi jste instrukce na odblokování?"
+        sign_in: "Přihlášení"
+        sign_up: "Zapsat se"
+        sign_up_closed: "Momentálně jsou další registrace pozastavené."
+    unlocks:
+      new:
+        resend_unlock: "Znovu zaslat instrukce k odemknutí účtu."
+      send_instructions: "Během několika minut obdržíte email s instrukcemi k odemknutí vašeho účtu."
+      unlocked: "Váš účet byl úspěšně odemknut. Nyní jste přihlášeni."
+  errors:
+    messages:
+      already_confirmed: "již bylo potvrzeno"
+      not_found: "nenalezeno"
+      not_locked: "nebylo zamčeno"

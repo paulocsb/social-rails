@@ -1,0 +1,93 @@
+#   Copyright (c) 2010-2013, Diaspora Inc.  This file is
+#   licensed under the Affero General Public License version 3 or later.  See
+#   the COPYRIGHT file.
+
+
+
+es-AR:
+  devise:
+    confirmations:
+      confirmed: "Tu cuenta se confirmó sin problemas. Ya estás conectado."
+      new:
+        resend_confirmation: "Reenviarme instrucciones para confirmar mi cuenta"
+      send_instructions: "En unos minutos vas a recibir un correo electrónico con instrucciones para confirmar tu cuenta."
+    failure:
+      inactive: "Tu cuenta todavía no fue activada."
+      invalid: "La contraseña o el nombre de usuario introducidos son incorrectos"
+      invalid_token: "El identificador de autenticación no es válido."
+      locked: "Tu cuenta está bloqueada"
+      not_found_in_database: "Contraseña o e-mail incorrecto."
+      timeout: "Tu sesión expiró, por favor conectate de nuevo."
+      unauthenticated: "Necesitás conectarte a tu cuenta, o registrarse, para continuar."
+      unconfirmed: "Necesitas confirmar tu cuenta antes de continuar."
+    invitations:
+      invitation_token_invalid: "¡Perdón! ¡El identificador de la invitación no es válido!"
+      send_instructions: "Ya se envió tu invitacíon."
+      updated: "Tu contraseña se estableció sin problemas. Ya estás conectado."
+    mailer:
+      confirmation_instructions:
+        confirm: "Confirmar mi cuenta"
+        subject: "Instrucciones para la confirmación"
+        you_can_confirm: "Podés confirmar tu cuenta a través del siguiente enlace:"
+      hello: "¡Hola %{email}!"
+      inviter:
+        accept_at: "en %{url}, podes aceptarlo desde el link  de abajo "
+        has_invited_you: "%{name} te ha invitado a unirte a Diaspora"
+        have_invited_you: "%{names} te han invitado a unirte a diaspora*"
+      reset_password_instructions:
+        change: "Cambiar mi contraseña"
+        ignore: "Si vos no hiciste la solicitud, por favor ignorá este correo."
+        someone_requested: "Alguien solicitó un enlace para cambiar tu contraseña. Si eras tú, entonces podés hacerlo a través del siguiente enlace."
+        subject: "Instrucciones para cambiar la contraseña"
+        wont_change: "Tu contraseña no cambiará hasta que no accedas al enlace anterior e indiques una nueva."
+      unlock_instructions:
+        account_locked: "Tu cuenta fue bloqueada a causa de excesivos intentos de conectarse con una contraseña incorrecta."
+        click_to_unlock: "Hacé click en el siguiente enlace para desbloquear tu cuenta:"
+        subject: "Instrucciones para desbloquear la cuenta"
+        unlock: "Desbloquear mi cuenta"
+      welcome: "¡Bienvenid@ %{email}!"
+    passwords:
+      edit:
+        change_password: "Cambiar mi contraseña"
+        confirm_password: "Confirmar contraseña"
+        new_password: "Nueva contraseña"
+      new:
+        email: "Correo electrónico"
+        forgot_password: "¿Olvidaste tu contraseña?"
+        no_account: "No hay ninguna cuenta con esta dirección de correo electrónico. Si estás esperando una invitación, te la enviaremos tan pronto como sea posible."
+        reset_password: "Resetear contraseña"
+        send_password_instructions: "Enviame instrucciones para cambiar mi contraseña."
+      send_instructions: "En unos minutos vas a recibir un correo electrónico con instrucciones para cambiar tu contraseña."
+      updated: "Tu contraseña se cambió sin problemas. Ya estás conectado."
+    registrations:
+      destroyed: "¡Chau! Tu cuenta se canceló sin problemas. Esperamos volver a verte pronto."
+      signed_up: "Fuiste registrado sin problemas. Si está habilitado, te enviamos un correo electrónico con instrucciones para confirmar tu cuenta."
+      updated: "Tu cuenta fue actualizada sin problemas."
+    sessions:
+      new:
+        login: "Iniciar sesión"
+        modern_browsers: "Sólo es compatible con navegadores modernos."
+        password: "Contraseña"
+        remember_me: "Recordarme"
+        sign_in: "Conectarse"
+        username: "Nombre de usuario"
+      signed_in: "Te conectaste con éxito. A navegar libre..."
+      signed_out: "Te desconectaste exitosamente."
+    shared:
+      links:
+        forgot_your_password: "¿Olvidaste tu contraseña?"
+        receive_confirmation: "¿No recibiste tus instrucciones para confirmar tu cuenta?"
+        receive_unlock: "¿No recibiste tus instrucciones para desbloquear tu cuenta?"
+        sign_in: "Conectarse"
+        sign_up: "Registrarse"
+        sign_up_closed: "El registro sin invitacíon está cerrado en este momento."
+    unlocks:
+      new:
+        resend_unlock: "Reenviarme instrucciones para desbloquear mi cuenta"
+      send_instructions: "En unos minutos vas a recibir un correo electrónico con instrucciones para desbloquear tu cuenta."
+      unlocked: "Tu cuenta fue desbloqueado sin problemas. Ya estás conectado."
+  errors:
+    messages:
+      already_confirmed: "ya había sido confirmada"
+      not_found: "no fue encontrada"
+      not_locked: "no estaba bloqueada"

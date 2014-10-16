@@ -1,0 +1,19 @@
+= javascript_include_tag :home
+
+= render :partial => 'publisher/publisher_bootstrap',
+         :locals => { :aspect => @aspect,
+                      :aspect_ids => @aspect_ids,
+                      :selected_aspects => @aspects_with_person,
+                      :person => @person }
+
+:javascript
+  $(function() {
+    app.publisher = new app.views.Publisher({
+      standalone: true
+    });
+    app.publisher.open();
+    $("#publisher").bind('ajax:success', function(){
+      $("#mentionModal").modal('hide');
+      location.reload();
+    });
+  });

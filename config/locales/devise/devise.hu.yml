@@ -1,0 +1,93 @@
+#   Copyright (c) 2010-2013, Diaspora Inc.  This file is
+#   licensed under the Affero General Public License version 3 or later.  See
+#   the COPYRIGHT file.
+
+
+
+hu:
+  devise:
+    confirmations:
+      confirmed: "Fiókod megerősítve. Be vagy jelentkezve."
+      new:
+        resend_confirmation: "Megerősítési utasítások újraküldése"
+      send_instructions: "Pár percen belül kapsz egy e-mailt, benne a megerősítéshez szükséges utasításokkal."
+    failure:
+      inactive: "A fiókod nem aktiváltad még."
+      invalid: "Érvénytelen felhasználónév vagy jelszó."
+      invalid_token: "Érvénytelen hitelesítési azonosító."
+      locked: "A fiókod zárolva van."
+      not_found_in_database: "Érvénytelen e-mail cím vagy jelszó"
+      timeout: "A munkamenet lejárt, kérjük jelentkezz be újra."
+      unauthenticated: "A továbblépéshez jelentkezz be vagy iratkozz fel."
+      unconfirmed: "Előbb meg kell erősítened fiókodat."
+    invitations:
+      invitation_token_invalid: "Sajnáljuk, de a meghívás nem érvényes."
+      send_instructions: "A meghívód elküldve."
+      updated: "A jelszó módosítva. Be vagy jelentkezve."
+    mailer:
+      confirmation_instructions:
+        confirm: "Fiókom megerősítése"
+        subject: "Megerősítési utasítások"
+        you_can_confirm: "Megerősítheted a fiókod ezen a linken keresztül:"
+      hello: "Szia %{email}!"
+      inviter:
+        accept_at: "Meghívás elfogadása: %{url}"
+        has_invited_you: "%{name} meghívott a Diaspora* közösségi oldalra."
+        have_invited_you: "%{names} meghívott a diaspora* közösségi oldalra."
+      reset_password_instructions:
+        change: "Jelszavam módosítása"
+        ignore: "Ha nem kérted ezt, hagyd figyelmen kívül a levelet."
+        someone_requested: "Valaki jelszóváltoztatást kért. Ha te voltál az, a következő link segítségével tudod véghezvinni."
+        subject: "Utasítások jelszó alaphelyzetbe állításához"
+        wont_change: "A jelszavad addig nem változik meg, amíg a fenti linken keresztül nem hozol létre egy újat."
+      unlock_instructions:
+        account_locked: "Fiókod zárolva lett a túl sokszori hibás bejelentkezési kísérlet miatt."
+        click_to_unlock: "Kattints az alábbi linkre, hogy feloldd a fiókod:"
+        subject: "Feloldási utasítások"
+        unlock: "Fiókom feloldása"
+      welcome: "Üdv %{email}!"
+    passwords:
+      edit:
+        change_password: "Megváltoztatom a jelszavamat"
+        confirm_password: "Jelszó megerősítése"
+        new_password: "Új jelszó"
+      new:
+        email: "E-mail cím"
+        forgot_password: "Elfelejtetted a jelszavad?"
+        no_account: "Ehhez az e-mail címhez nem tartozik fiók."
+        reset_password: "Jelszó visszaállítása"
+        send_password_instructions: "Küldd el nekem a jelszó alaphelyzetbe állításához szükséges utasításokat"
+      send_instructions: "Néhány perc múlva kapsz egy e-mailt arról, hogyan állíthatod alaphelyzetbe a jelszavadat."
+      updated: "A jelszavad megváltozott. Be vagy jelentkezve vele."
+    registrations:
+      destroyed: "Viszlát! A fiókod törölve. Reméljük hamarosan újra látunk. =)"
+      signed_up: "Sikeresen feliratkoztál. Ha engedélyezve van, akkor egy megerősítő e-mailt küldünk."
+      updated: "Fiókod frissítve."
+    sessions:
+      new:
+        login: "Bejelentkezés"
+        modern_browsers: "csak modern böngészőket támogatunk."
+        password: "Jelszó"
+        remember_me: "Emlékezzen rám"
+        sign_in: "Bejelentkezés"
+        username: "Felhasználónév"
+      signed_in: "Sikeresen bejelentkeztél."
+      signed_out: "Sikeresen kijelentkeztél."
+    shared:
+      links:
+        forgot_your_password: "Elfelejtetted a jelszavad?"
+        receive_confirmation: "Nem kaptál megerősítési utasítást?"
+        receive_unlock: "Nem kaptad meg feloldási utasítást?"
+        sign_in: "Bejelentkezés"
+        sign_up: "Feliratkozás"
+        sign_up_closed: "Nincs nyílt feliratkozási lehetőség jelenleg."
+    unlocks:
+      new:
+        resend_unlock: "Feloldási utasítások újraküldése"
+      send_instructions: "Pár percen belül kapsz egy e-mailt, benne a feloldáshoz szükséges utasításokkal."
+      unlocked: "A fiókod sikeresen feloldva. Be vagy jelentkezve."
+  errors:
+    messages:
+      already_confirmed: "már megerősítette"
+      not_found: "nem található"
+      not_locked: "nem volt bezárva"

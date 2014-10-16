@@ -1,0 +1,196 @@
+#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+#   licensed under the Affero General Public License version 3 or later.  See
+#   the COPYRIGHT file.
+
+
+
+gl:
+  javascripts:
+    confirm_dialog: "Está seguro?"
+    report:
+      prompt: "Explique o motivo:"
+      prompt_default: "Contido ofensivo"
+      name: "Denunciar"
+      status:
+        created: "Interpúxose a denuncia."
+        exists: "A denuncia xa fora interposta."
+    report_prompt: "Explique o motivo:"
+    report_prompt_default: "Contido ofensivo"
+    delete: "Eliminar"
+    ignore: "Ignorar"
+    report: "Denunciar"
+    ignore_user: "Ignorar este usuario?"
+    and: "e"
+    comma: ","
+    edit: "Editar"
+    timeago:
+      prefixAgo: "Hai"
+      prefixFromNow: "Dentro de"
+      suffixAgo: ""
+      suffixFromNow: ""
+      seconds: "menos dun minuto."
+      minute: "un minuto."
+      minutes: "%d minutos."
+      hours: "%d horas."
+      hour: "unha hora."
+      day: "un día."
+      days: "%d días."
+      month: "un mes."
+      months: "%d meses."
+      year: "un ano."
+      years: "%d anos."
+      wordSeparator: " "
+
+    my_activity: "Actividade"
+    my_stream: "Onda"
+    my_aspects: "Aspectos"
+
+    videos:
+      watch: "Ver o vídeo en <%= provider %>"
+      unknown: "Tipo de vídeo descoñecido"
+    search_for: "Buscar «<%= name %>»"
+    publisher:
+      at_least_one_aspect: "Ten que publicalo polo menos nun aspecto."
+      limited: "Limitado. Só poderá velo a xente coa que comparte."
+      public: "Público. Poderá velo calquera, e aparecerá nos motores de busca."
+      near_from: "Publicado desde <%= location %>"
+      option: "Opción <%= nr %>"
+      add_option: "Engadir unha opción"
+      question: "Cuestión"
+    bookmarklet:
+      post_something: "Publicar en diaspora*"
+      post_submit: "Enviando a publicación…"
+      post_success: "Publicouse! Pechando a xanela emerxente…"
+    infinite_scroll:
+      no_more: "Non hai máis publicacións."
+    aspect_dropdown:
+      add_to_aspect: "Engadir como contacto"
+      select_aspects: "Seleccionar aspectos"
+      all_aspects: "Todos os aspectos"
+      stopped_sharing_with: "Deixou de compartir con <%= name %>."
+      started_sharing_with: "Comezou a compartir con <%= name %>!"
+      error: "Non foi posíbel empezar a compartir con <%= name %>.  Está ignorando a esa persoa?"
+      error_remove: "Non foi posíbel eliminar a <%= name %> do aspecto."
+      toggle:
+        zero: "Engadir a un aspecto"
+        one: "Nun aspecto"
+        two: "En dous aspectos"
+        few: "En <%= count %> aspectos"
+        many: "En <%= count %> aspectos"
+        other: "En <%= count %> aspectos"
+    show_more: "Mostrar máis"
+    failed_to_like: "Non foi posíbel indicar que lle gusta a publicación!"
+    failed_to_post_message: "Non foi posíbel publicar a mensaxe!"
+    failed_to_remove: "Non foi posíbel eliminar a publicación!"
+    comments:
+      show: "Mostrar os comentarios"
+      hide: "Ocultar os comentarios"
+      no_comments: "Aínda non hai comentarios."
+    reshares:
+      duplicate: "Moi interesante ten que ser iso para que o repitas outra vez!"
+      successful: "A publicación repetiuse correctamente."
+      post: "Quere repetir a publicación de <%= name %>?"
+    aspect_navigation:
+      select_all: "Escollelos todos"
+      deselect_all: "Non escoller ningún"
+      no_aspects: "Non se escolleu ningún"
+      add_an_aspect: "Engadir un aspecto"
+    getting_started:
+      hey: "Ola, <%= name %>!"
+      no_tags: "Eh, non está a seguir ningunha etiqueta! Quere continuar aínda así?"
+      alright_ill_wait: "Como queira, esperarei."
+      preparing_your_stream: "Preparando a súa onda personalizada…"
+    photo_uploader:
+      looking_good: "Ghuapo ghuapo non é, pero ten unha pelaxe…"
+      completed: "<%= file %> enviada."
+    tags:
+      wasnt_that_interesting: "Vale, supoño que #<%= tagName %> non era tan interesante…"
+    people:
+      not_found: "Non se atopou a ninguén."
+
+    conversation:
+      participants: "Participantes"
+
+    notifications:
+      mark_read: "Marcar como lido"
+      mark_unread: "Marcar como non lido"
+
+    stream:
+      hide: "Ocultar"
+      public: "Público"
+      limited: "Limitado"
+      like: "Gústame"
+      unlike: "Xa non me gusta"
+      reshare: "Repetir"
+      comment: "Comentar"
+      original_post_deleted: "O autor eliminou a publicación orixinal."
+      show_post: "Mostrar a publicación"
+      hide_nsfw_posts: "Ocultar contido etiquetado con #nsfw"
+      follow: "Seguir"
+      unfollow: "Deixar de seguir"
+      via: "mediante <%= provider %>"
+
+      likes:
+        zero: "Non lle gusta a ninguén."
+        one: "Gústalle a unha persoa."
+        two: "Gústalle a dúas persoas"
+        few: "Gústalle a <%= count %> persoas."
+        many: "Gústalle a <%= count %> persoas."
+        other: "Gústalle a <%= count %> persoas."
+
+      reshares:
+        zero: "Ningunha repetición."
+        one: "Unha repetición."
+        two: "Dúas repeticións."
+        few: "<%= count %> repeticións."
+        many: "<%= count %> repeticións."
+        other: "<%= count %> repeticións."
+
+      more_comments:
+        zero: "Non hai máis comentarios"
+        one: "Mostrar o comentario que falta"
+        two: "Mostrar os dous comentarios que faltan"
+        few: "Mostrar <%= count %> comentarios máis"
+        many: "Mostrar <%= count %> comentarios máis"
+        other: "Mostrar <%= count %> comentarios máis"
+
+    header:
+      home: "Inicio"
+      profile: "Perfil"
+      contacts: "Contactos"
+      settings: "Configuración"
+      help: "Axuda"
+      admin: "Administración"
+      log_out: "Saír"
+
+      notifications: "Notificacións"
+      conversations: "Conversas"
+
+      search: "Atopar xente ou #etiquetas"
+
+      recent_notifications: "Últimas notificacións"
+      mark_all_as_read: "Marcalas todas como lidas"
+      view_all: "Velas todas"
+      close: "Pechar"
+
+    viewer:
+      stop_following_post: "Deixar de seguir"
+      follow_post: "Seguir a publicación"
+      like: "Gústame"
+      unlike: "Xa non me gusta"
+      reshare: "Repetir"
+      reshared: "Repetida"
+      comment: "Comentar"
+      home: "Inicio"
+
+    poll:
+      vote: "Votar"
+      result: "Resultado"
+      count:
+        zero: "Aínda non votou ninguén."
+        one: "Votou unha persoa."
+        other: "Votaron <%=count%> persoas."
+      show_result: "Mostrar o resultado"
+      close_result: "Agochar o resultado"
+
+

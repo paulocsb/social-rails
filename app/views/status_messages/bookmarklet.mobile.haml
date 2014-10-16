@@ -1,0 +1,24 @@
+-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+-#   licensed under the Affero General Public License version 3 or later.  See
+-#   the COPYRIGHT file.
+
+= render :partial => 'publisher/publisher', :locals => { :aspect => :profile, :selected_aspects => @aspects,  :aspect_ids => @aspect_ids }
+
+:javascript
+  var contents = "#{escape_javascript params[:content]}";
+  if(!contents){
+    contents  = "#{escape_javascript params[:title]} - #{escape_javascript params[:url]}";
+    var notes = "#{escape_javascript params[:notes]}";
+    if (notes.length > 0){
+      contents += " - " + notes;
+    }
+  }
+
+  $(document).ready(function() {
+    if (contents.length > 0) {
+      $("#status_message_text").val(contents);
+    }
+  });
+
+- content_for(:head) do
+  = javascript_include_tag :jquery, :mobile

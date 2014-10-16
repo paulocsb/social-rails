@@ -1,0 +1,30 @@
+.opengraph-container {
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  font-style: normal;
+  margin: 10px 0px 10px 0px;
+  border-top: solid 1px $border-grey;
+  border-bottom: solid 1px $border-grey;
+  padding: 10px 0px 5px 0px;
+  overflow: hidden;
+  a {
+    color: #000;
+    img {
+      margin: 5px 5px 5px 0px;
+      float: left;
+      max-width: 150px;
+      padding-right: 5px;
+    }
+    .og-title {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+  }
+  a:hover {
+    color: $blue;
+  }
+  .og-description {
+    color: $text-grey;
+  }
+}

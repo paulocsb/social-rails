@@ -1,0 +1,181 @@
+html,
+body {
+  /* hack to ensure fixed elements at height: 100%; are in relation to the window */
+  max-height : 100%;
+}
+
+body {
+  margin-top: 40px;
+  padding : none;
+
+  &.lock {
+    overflow: hidden;
+  }
+}
+
+/* new link color */
+$link-blue : rgb(42,156,235);
+a { color : $link-blue  }
+
+/* bootstrap extentions */
+.icon-red   { background-image: image_url("img/glyphicons-halflings-red.png");   }
+.icon-blue  { background-image: image_url("img/glyphicons-halflings-blue.png");  }
+
+.avatar {
+  &.micro {
+    height: 20px;
+    width: 20px;
+  }
+
+  &.small {
+    height: 35px;
+    width: 35px;
+  }
+}
+
+#forgot_password,
+#reset_password {
+  background-image : image_url("texture/light-bg.png");
+  height: 100%;
+}
+
+.author-name {
+  color: inherit;
+}
+
+.photo-fill {
+  @include background-cover();
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+$bring-dark-accent-forward-color: #DDD;
+
+#top-right-nav {
+  z-index: 10;
+  position : absolute;
+  right : 10px;
+  top : 10px;
+
+  & > a {
+    @include transition(opacity);
+    @include opacity(0.4);
+
+    margin-left : 5px;
+
+    &:hover {
+      @include opacity(0.75);
+      text-decoration : none;
+    }
+  }
+}
+
+#header {
+  position : fixed;
+  top : 0;
+  width : 100%;
+  padding : 15px;
+  z-index : 30;
+
+  -webkit-box-shadow : inset 0 -10px 10px -8px rgba(0,0,0,0.8);
+  -moz-box-shadow : inset 0 -10px 10px -8px rgba(0,0,0,0.8);
+
+  border-bottom : 1px solid #333;
+
+  color : #fff;
+  background : {
+    color : #333;
+    size : cover;
+    attachment : fixed;
+  }
+
+  h1 {
+    @include opacity(0.4);
+  }
+}
+
+/* bootstrap label fixes for Roboto */
+.label {
+  padding : 2px 5px;
+  padding-bottom : 3px;
+
+  span {
+    display : inline-block;
+    position : relative;
+    top : 1px;
+    font-family : Roboto-Bold;
+  }
+}
+
+.profile-image-container {
+  border-radius: 140px;
+  border : 3px solid #fff;
+  box-shadow : 0 0 2px rgba(0,0,0,0.5), 0 0 10px rgba(0,0,0,0.6), inset 0 0 15px rgba(0,0,0,0.5), inset 0 -2px 4px rgba(255,255,255,0.3);
+  background-size: cover;
+
+  height : 140px;
+  width : 140px;
+  background : {
+    position : center;
+    image : image-url('user/default.png');
+  }
+
+  display : inline-block;
+
+  margin-bottom : 5px;
+
+  &.small {
+    height : 40px;
+    width : 40px;
+    border : 2px solid #fff;
+  }
+
+  &.smaller {
+    height : 34px;
+    width : 34px;
+    border : 2px solid #ccc;
+  }
+
+  &.micro {
+    height : 24px;
+    width : 24px;
+    border : 2px solid #fff;
+  }
+}
+
+#back-to-top {
+  display: block;
+  color: white;
+  position: fixed;
+  z-index: 49;
+  right: 20px;
+  bottom: 20px;
+  opacity: 0;
+  font-size: 2.9em;
+  padding: 0 12px 0 12px;
+  border-radius: 10px;
+  background-color: #aaa;
+  &:hover { opacity: 0.85 !important; }
+  &.visible { opacity: 0.5; }
+  line-height: 1.5;
+}
+
+/* general purpose classes */
+
+.small-horizontal-spacer {
+  height: 20px;
+}
+
+.big-horizontal-spacer {
+  height: 50px;
+}
+
+/* responsive */
+@media (max-width: 767px) {
+  body {
+    padding : 0;
+ }
+}

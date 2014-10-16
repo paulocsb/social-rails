@@ -1,0 +1,89 @@
+#   Copyright (c) 2010-2013, Diaspora Inc.  This file is
+#   licensed under the Affero General Public License version 3 or later.  See
+#   the COPYRIGHT file.
+
+
+
+zh-TW:
+  devise:
+    confirmations:
+      confirmed: "帳號確認成功。你已經登入了。"
+      new:
+        resend_confirmation: "重送確認步驟"
+      send_instructions: "幾分鐘之內，你會收到一封信件，說明如何確認帳號。"
+    failure:
+      inactive: "你的帳號尚未開通。"
+      invalid: "使用者名稱或密碼無效。"
+      invalid_token: "認證信物無效。"
+      locked: "你的帳號已鎖定。"
+      not_found_in_database: "無效的電子郵件或密碼。"
+      timeout: "工作階段已逾時，要繼續的話請重新登入。"
+      unauthenticated: "繼續之前你必須先登入或註冊。"
+      unconfirmed: "你必須先確認帳號才能繼續。"
+    invitations:
+      invitation_token_invalid: "很抱歉！此邀請信物無效。"
+      send_instructions: "邀請卡寄出去了。"
+      updated: "密碼設定成功。你已經登入了。"
+    mailer:
+      confirmation_instructions:
+        confirm: "帳號確認"
+        subject: "確認步驟"
+        you_can_confirm: "你可以使用以下連結確認帳號："
+      hello: "你好，%{email}！"
+      inviter:
+        accept_at: "於 %{url}，你可以透過以下連結來接受。"
+        has_invited_you: "%{name}"
+        have_invited_you: "%{names} 邀請你加入 Diaspora"
+      reset_password_instructions:
+        change: "更改密碼"
+        ignore: "如果你沒有要求過，請不用管這封信。"
+        someone_requested: "有人要求要改變你的密碼，如果是你自己的話，請按以下連結來做。"
+        subject: "密碼重設步驟"
+        wont_change: "在按了以上連結，並且設定新的密碼後，你的密碼才會改變。"
+      unlock_instructions:
+        account_locked: "你的帳號因為登入失敗太多次而被鎖定了。"
+        click_to_unlock: "點一下以下連結來將你的帳號解鎖："
+        subject: "解鎖步驟"
+        unlock: "帳號解鎖"
+      welcome: "歡迎你，%{email}！"
+    passwords:
+      edit:
+        change_password: "更改密碼"
+      new:
+        forgot_password: "忘記密碼了嗎？"
+        no_account: "沒有和這個電子信箱關聯的帳號"
+        send_password_instructions: "傳送密碼重設的步驟給我"
+      send_instructions: "幾分鐘之內，你會收到一封說明如何重設密碼的信件。"
+      updated: "密碼更改成功，你已經登入了。"
+    registrations:
+      destroyed: "掰掰！你的帳號已經取消了。希望不久後再見。"
+      signed_up: "你已經登記成功了。如果有設定的話，確認信會送到你的信箱。"
+      updated: "帳號更新成功了。"
+    sessions:
+      new:
+        login: "登入"
+        modern_browsers: "僅支援新潮的瀏覽器。"
+        password: "密碼"
+        remember_me: "記住我"
+        sign_in: "登入"
+        username: "使用者名稱"
+      signed_in: "登入成功。"
+      signed_out: "登出成功。"
+    shared:
+      links:
+        forgot_your_password: "忘記密碼了嗎？"
+        receive_confirmation: "沒收到確認步驟嗎？"
+        receive_unlock: "沒收到解鎖步驟嗎？"
+        sign_in: "登入"
+        sign_up: "註冊"
+        sign_up_closed: "目前不開放公開登記。"
+    unlocks:
+      new:
+        resend_unlock: "重送解鎖步驟"
+      send_instructions: "幾分鐘之內，你會收到一封信件，說明如何將你的帳號解鎖。"
+      unlocked: "帳號解鎖成功。你已經登入了。"
+  errors:
+    messages:
+      already_confirmed: "被確認過了"
+      not_found: "找不到"
+      not_locked: "沒被鎖定"

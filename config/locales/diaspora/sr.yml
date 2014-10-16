@@ -1,0 +1,212 @@
+#   Copyright (c) 2010-2013, Diaspora Inc.  This file is
+#   licensed under the Affero General Public License version 3 or later.  See
+#   the COPYRIGHT file.
+
+
+
+sr:
+  _applications: "Апликације"
+  _comments: "Коментари"
+  _contacts: "Контакти"
+  _home: "Почетна"
+  _photos: "Фотографије"
+  _services: "Услуге"
+  account: "Налог"
+  activerecord:
+    errors:
+      models:
+        contact:
+          attributes:
+            person_id:
+              taken: "мора бити јединствено за све корисникове контакте."
+        person:
+          attributes:
+            diaspora_handle:
+              taken: "је већ заузето."
+        request:
+          attributes:
+            from_id:
+              taken: "је дупликат већ постојећег захтева."
+        reshare:
+          attributes:
+            root_guid:
+              taken: "Добро је, а?  Већ сте поделили ту објаву!"
+        user:
+          attributes:
+            email:
+              taken: "је већ заузето."
+            person:
+              invalid: "је неисправно."
+            username:
+              invalid: "је неисправно. Дозвољени су само слова, бројеви и доње црте."
+              taken: "је већ заузето."
+  ago: "пре %{time}"
+  all_aspects: "Сви погледи"
+  application:
+    helper:
+      unknown_person: "непозната особа"
+      video_title:
+        unknown: "непознат наслов видеа"
+  are_you_sure: "Јесте ли сигурни?"
+  are_you_sure_delete_account: "Јесте ли сигурни да желите да затворите налог? Ово се не може повратити!"
+  aspect_memberships:
+    destroy:
+      failure: "Неуспех приликом уклањања особе из аспекта"
+      no_membership: "Немогуће пронаћи изабрану особу у том аспекту"
+      success: "Особа успешно уклоњена из аспекта"
+  aspects:
+    add_to_aspect:
+      failure: "Неуспешно додавање особе у поглед."
+      success: "Особа успешно додата у поглед."
+    aspect_contacts:
+      done_editing: "Готово уређивање"
+    aspect_listings:
+      add_an_aspect: "+ Додај поглед"
+      deselect_all: "Не означи ни један"
+      edit_aspect: "Измени %{name}"
+      select_all: "Означи све"
+    aspect_stream:
+      stay_updated: "Буди у току"
+    contacts_not_visible: "Контакти у овом погледу неће моћи да виде једни друге."
+    contacts_visible: "Контакти у овом погледу ће моћи да виде једни друге."
+    create:
+      failure: "Неуспешно прављење погледа."
+      success: "Твој нови поглед %{name} је направљен."
+    destroy:
+      failure: "%{name} није празан и не може се уклонити."
+      success: "Поглед %{name} је успешно уклоњен."
+    edit:
+      add_existing: "Додај постојећи контакт"
+      aspect_list_is_not_visible: "списак погледа је невидљив осталима у погледу"
+      aspect_list_is_visible: "списак погледа је видљив осталима у погледу"
+      confirm_remove_aspect: "Јесте ли сигурни да желите да обришете овај поглед?"
+      done: "Готово"
+      make_aspect_list_visible: "Учини контакте у овом погледу видљиве једне другима?"
+      remove_aspect: "Обриши овај поглед"
+      rename: "Преименуј"
+      update: "Ажурирај"
+      updating: "ажурирање"
+    few: "%{count} погледа"
+    helper:
+      are_you_sure: "Да ли сигурно желиш да обришеш овај поглед?"
+      aspect_not_empty: "Поглед није празан"
+      remove: "уклони"
+    index:
+      diaspora_id:
+        content_1: "Твој Дијаспора ИД је:"
+        content_2: "Дај га било коме и моћи ће да те нађе на Дијаспори."
+        heading: "Дијаспора ИД"
+      donate: "Донирај"
+      handle_explanation: "Ово је твој Дијаспора ИД. Можеш га дати људима као и имејл адресу, да могу да те нађу."
+      help:
+        do_you: "Да ли:"
+        email_feedback: "Ако више волиш, пошаљи нам %{link}"
+        feature_suggestion: "...имаш %{link}?"
+        find_a_bug: "...сте нашли %{link}?"
+        have_a_question: "...имаш %{link}?"
+        here_to_help: "Заједница Дијаспоре је овде!"
+        need_help: "Треба ти помоћ?"
+        tag_bug: "грешку"
+        tag_feature: "предлог"
+        tag_question: "питање"
+      introduce_yourself: "Ово је твој ток.  Упадај и представи се."
+      new_here:
+        follow: "Прати %{link} и поздрављај нове кориснике Дијаспоре*!"
+        learn_more: "Научи више"
+        title: "Поздрави нове кориснике"
+      no_contacts: "Нема контаката"
+      no_tags: "+ Нађи ознаке за праћење"
+      people_sharing_with_you: "Људи који деле са тобом"
+      post_a_message: "објави поруку >>"
+      services:
+        content: "Можеш повезати следеће сајтове са Дијаспором:"
+        heading: "Повежи сајтове"
+      unfollow_tag: "Не прати више #%{tag}"
+      welcome_to_diaspora: "Добродошли на Дијаспору, %{name}!"
+    many: "%{count} погледа"
+    move_contact:
+      error: "Грешка приликом премештања особе: %{inspect}"
+      failure: "није успело: %{inspect}"
+      success: "Особа премештена у нови поглед."
+    new:
+      create: "Направи"
+      name: "Име (видљиво само теби)"
+    no_contacts_message:
+      community_spotlight: "заједницом"
+      or_spotlight: "Или можеш поделити са %{link}"
+      try_adding_some_more_contacts: "Можеш тражити или позвати још контаката."
+      you_should_add_some_more_contacts: "Требало би да додаш контакте!"
+    no_posts_message:
+      start_talking: "Још нико ништа није рекао!"
+    one: "један поглед"
+    other: "%{count} погледа"
+    seed:
+      acquaintances: "Познаници"
+      family: "Породица"
+      friends: "Пријатељи"
+      work: "Посао"
+    selected_contacts:
+      manage_your_aspects: "Уреди своје погледе."
+      no_contacts: "Још немаш контаката."
+      view_all_community_spotlight: "Погледај целу заједницу"
+      view_all_contacts: "Види све контакте"
+    show:
+      edit_aspect: "Измени поглед"
+    two: "%{count} погледа"
+    update:
+      failure: "Твој поглед, %{name}, има предугачак назив да би се сачувао."
+      success: "Твој поглед, %{name}, је успешно измењен."
+    zero: "нема погледа"
+  back: "Назад"
+  bookmarklet:
+    post_something: "Објави на Дијаспори"
+  cancel: "Откажи"
+  comments:
+    new_comment:
+      commenting: "Коментарише се..."
+  contacts:
+    index:
+      add_to_aspect_link: "додај контакт аспекту %{name}"
+      all_contacts: "Сви контакти"
+      my_contacts: "Моји контакти"
+      no_contacts: "Изгледа да треба да додаш неке контакте!"
+      title: "Контакти"
+      your_contacts: "Твоји контакти"
+  conversations:
+    new:
+      send: "Пошаљи"
+      sending: "Шаљем..."
+      subject: "наслов"
+      to: "за"
+    show:
+      reply: "одговор"
+      replying: "Одговарам..."
+  delete: "Уклони"
+  email: "Имејл"
+  error_messages:
+    helper:
+      correct_the_following_errors_and_try_again: "Исправи следеће грешке и покушај поново."
+      invalid_fields: "Погрешно попуњена поља"
+  fill_me_out: "Испуни ме"
+  find_people: "Тражи људе или #тагове"
+  hide: "Сакриј"
+  limited: "Ограничено"
+  more: "Још"
+  next: "следеће"
+  no_results: "Нема резултата"
+  nsfw: "Није пригодно за посао"
+  ok: "У реду"
+  or: "или"
+  password: "Лозинка"
+  password_confirmation: "Понови лозинку"
+  previous: "претходно"
+  privacy: "Приватност"
+  privacy_policy: "Политика приватности"
+  profile: "Профил"
+  public: "Јавно"
+  search: "Претрага"
+  settings: "Подешавања"
+  terms_and_conditions: "Услови коришћења"
+  undo: "Врати?"
+  username: "Корисничко име"
+  welcome: "Добородошли!"

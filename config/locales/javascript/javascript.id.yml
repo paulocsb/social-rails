@@ -1,0 +1,103 @@
+#   Copyright (c) 2010-2013, Diaspora Inc.  This file is
+#   licensed under the Affero General Public License version 3 or later.  See
+#   the COPYRIGHT file.
+
+
+
+id:
+  javascripts:
+    aspect_dropdown:
+      add_to_aspect: "Tambahkan kontak"
+      all_aspects: "Semua aspek"
+      error: "Tidak bisa berbagi dengan <%= name %>. Apakah anda mengabaikan mereka ?"
+      select_aspects: "Pilih salah satu aspek"
+      started_sharing_with: "Anda mulai berbagi dengan <%= name %> !"
+      stopped_sharing_with: "Anda berhenti berbagi dengan <%= name %>"
+      toggle:
+        other: "Dalam <%= count %> Hal"
+        zero: "Dalam <%= count %> Hal"
+    aspect_navigation:
+      deselect_all: "Batalkan semua pilihan"
+      no_aspects: "Tak ada apapun yang di pilih"
+      select_all: "Pilih semua"
+    comments:
+      hide: "sembunyikan komentar"
+      show: "tampilkan semua komentar"
+    confirm_dialog: "Anda yakin ?"
+    delete: "Menghapus"
+    failed_to_like: "Gagal untuk 'like'!"
+    failed_to_post_message: "Gagal memposting pesan!"
+    getting_started:
+      alright_ill_wait: "Baiklah, Saya akan menunggu"
+      hey: "Hey, <%= name %>!"
+      no_tags: "Hey, anda belum mengikuti 'tags' apapun! Lanjutkan ?"
+      preparing_your_stream: "Mempersiapkan 'stream' personalisasi anda"
+    header:
+      search: "Temukan nama orang atau #tags"
+    ignore: "Abaikan"
+    infinite_scroll:
+      no_more: "Tidak ada post lagi"
+    my_activity: "Aktifitas Saya"
+    my_stream: "Stream"
+    photo_uploader:
+      looking_good: "Puji Tuhan, anda terlihat luar biasa!"
+    publisher:
+      at_least_one_aspect: "Anda harus mempublikasi, setidaknya satu hal"
+      limited: "Di Limitasi - Apa yang anda publikasi hanya dapat di lihat oleh orang-orang yang berbagi dengan anda."
+      public: "Publik - Apa yang anda publikasi dapat di lihat oleh siapa saja dan dapat di temukan oleh mesin pencari."
+    reshares:
+      duplicate: "Menarik ? Anda telah membagikan ulang posting tersebut!"
+    search_for: "Mencari <%= name %>"
+    show_more: "Tampilkan lebih banyak lagi"
+    stream:
+      comment: "Komentar"
+      follow: "Ikuti"
+      hide: "Sembunyikan"
+      hide_nsfw_posts: "Sembunyikan #nsfw"
+      like: "Suka"
+      likes:
+        few: "<%= count %> Likes"
+        many: "<%= count %> Likes"
+        one: "<%= count %> Like"
+        other: "<%= count %> Likes"
+        two: "<%= count %> Likes"
+        zero: "<%= count %> Likes"
+      limited: "Terbatas"
+      more_comments:
+        other: "Tampilkan <%= count %> komentar"
+        zero: "Tampilkan <%= count %> komentar"
+      original_post_deleted: "Posting asli di hapus oleh penulis."
+      public: "Publik"
+      reshare: "Sebarkan/Bagikan Lagi"
+      reshares:
+        few: "<%= count %> Reshares"
+        many: "<%= count %> Reshares"
+        one: "<%= count %> Reshare"
+        other: "<%= count %> Reshares"
+        two: "<%= count %> Reshares"
+        zero: "<%= count %> Reshares"
+      show_nsfw_post: "Tampilkan"
+      show_nsfw_posts: "Tampilkan semua"
+      unfollow: "Berhenti ikuti"
+      unlike: "Tidak Suka"
+    tags:
+      wasnt_that_interesting: "OK, sepertinya #<%= tagName %> tidak terlalu menarik..."
+    timeago:
+      day: "sehari"
+      days: "%d hari"
+      hour: "sekitar sejam"
+      hours: "sekitar %d jam"
+      minute: "sekitar satu menit"
+      minutes: "%d menit"
+      month: "sekitar sebulan"
+      months: "%d tahun"
+      prefixAgo: ""
+      prefixFromNow: ""
+      seconds: "kurang dari semenit"
+      suffixAgo: "yang lalu"
+      suffixFromNow: "dari sekarang"
+      year: "sekitar setahun"
+      years: "%d tahun"
+    videos:
+      unknown: "Tipe video tidak di kenal"
+      watch: "Lihat video ini di <%= provider %>"

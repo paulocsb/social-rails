@@ -1,0 +1,191 @@
+#   Copyright (c) 2010-2013, Diaspora Inc.  This file is
+#   licensed under the Affero General Public License version 3 or later.  See
+#   the COPYRIGHT file.
+
+
+
+hu:
+  javascripts:
+    and: "és"
+    aspect_dropdown:
+      add_to_aspect: "Hozzáadás a csoporthoz"
+      all_aspects: "Összes csoport"
+      error: "Nem indult el a megosztás vele: <%= name %>. Visszavonod?"
+      error_remove: "<%= name %> nem távolítható el a csoportból :("
+      select_aspects: "Csoportok kiválasztása"
+      started_sharing_with: "Mostantól megosztasz vele: <%= name %>!"
+      stopped_sharing_with: "Nem osztasz meg többé vele: <%= name %>."
+      toggle:
+        few: "<%= count %> csoportban"
+        many: "<%= count %> csoportban"
+        one: "<%= count %> csoportban"
+        other: "<%= count %> csoportban"
+        two: "<%= count %> csoportban"
+        zero: "Csoportok kiválasztása"
+    aspect_navigation:
+      add_an_aspect: "+ Új csoport"
+      deselect_all: "Összes kijelölés megszüntetése"
+      no_aspects: "Nincs csoport kiválasztva"
+      select_all: "Mindent kijelöl"
+    bookmarklet:
+      post_something: "Hozz létre bejegyzést"
+      post_submit: "Bejegyzés közzététele..."
+      post_success: "Közzétéve! A felugró ablak bezáródik..."
+    comma: ","
+    comments:
+      hide: "hozzászólások elrejtése"
+      no_comments: "Még nincs hozzászólás."
+      show: "összes hozzászólás"
+    confirm_dialog: "Biztos vagy benne?"
+    contacts:
+      aspect_list_is_not_visible: "A csoport tagjai nem láthatják egymást."
+      aspect_list_is_visible: "A csoport tagjai láthatják egymást."
+    conversation:
+      participants: "Résztvevők"
+    delete: "Töröl"
+    edit: "Szerkesztés"
+    failed_to_like: "Hiba"
+    failed_to_post_message: "Üzenet elküldése sikertelen!"
+    failed_to_remove: "Nem sikerült eltávolítani az elemet!"
+    getting_started:
+      alright_ill_wait: "Rendben, várok!"
+      hey: "Szia <%= name %>!"
+      no_tags: "Hékás, nem követtél egy #címkét sem! Így is folytatod?"
+      preparing_your_stream: "Személyre szabott hírfolyamod előkészítése..."
+    header:
+      admin: "Adminisztráció"
+      close: "bezárás"
+      contacts: "Ismerősök"
+      conversations: "Beszélgetések"
+      help: "Súgó"
+      home: "Kezdőlap"
+      log_out: "Kijelentkezés"
+      mark_all_as_read: "Összes olvasottnak jelölése"
+      notifications: "Értesítések"
+      profile: "Adatlap"
+      recent_notifications: "Friss értesítések"
+      search: "Keresés"
+      settings: "Beállítások"
+      view_all: "Összes"
+    ignore: "Mellőzés"
+    ignore_failed: "Nem sikerült mellőzni ezt a felhasználót"
+    ignore_user: "Felhasználó mellőzése?"
+    infinite_scroll:
+      no_more: "Nincs több bejegyzés."
+      no_more_contacts: "Nincs több ismerős."
+    my_activity: "Tevékenységeim"
+    my_aspects: "Csoportjaim"
+    my_stream: "Hírfolyam"
+    no_results: "Nincs találat"
+    notifications:
+      mark_read: "Olvasottnak jelöl"
+      mark_unread: "Olvasatlannak jelöl"
+    people:
+      not_found: "és nem találni senkit..."
+    photo_uploader:
+      completed: "<%= file %> feltöltve"
+      empty: "{file} üres, kérlek válassz képeket újra, mellőzve a jelenlegit."
+      error: "Hiba történt a(z) \"<%= file %>\" nevű állomány feltöltésekor"
+      invalid_ext: "{file} érvénytelen kiterjesztésű. Csak {extensions} használata megengedett."
+      looking_good: "Azta! Remekül nézek ki!"
+      size_error: "{file} túl nagy, az állomány mérete legfeljebb {sizeLimit} lehet."
+    poll:
+      close_result: "Eredmény rejtése"
+      count:
+        other: "<%=count%> szavazat eddig"
+      result: "Eredmény"
+      show_result: "Eredmény mutatása"
+      vote: "Szavazás"
+    publisher:
+      add_option: "Válasz hozzáadása"
+      at_least_one_aspect: "Legalább egy csoporttal meg kell osztanod!"
+      limited: "Korlátozott - csak az ismerőseid láthatják ezt a bejegyzést"
+      near_from: "<%= location %> közelében"
+      option: "Válasz"
+      public: "Nyilvános - ezt a bejegyzést bárki láthatja az interneten."
+      question: "Kérdés"
+    report:
+      name: "Jelentés"
+      prompt: "Kérünk adj meg egy indokot:"
+      prompt_default: "sértő tartalom"
+      status:
+        created: "A jelentés sikeresen létrehozva"
+        exists: "A jelentés már létezik"
+    reshares:
+      duplicate: "Jó mi? De már egyszer megosztottad ezt a bejegyzést!"
+      post: "Szeretnéd újra megosztani <%= name %> bejegyzését?"
+      successful: "A bejegyzés újraosztása sikeres!"
+    search_for: "<%= name %> keresése."
+    show_more: "tovább"
+    stream:
+      comment: "Hozzászólás"
+      follow: "Követem"
+      followed_tag:
+        add_a_tag: "Címke hozzáadása"
+        contacts_title: "Emberek, akik ezeket a címkéket követik"
+        follow: "Követés"
+        title: "#követett címkék"
+      hide: "Elrejt"
+      hide_nsfw_posts: "#nsfw bejegyzések rejtése"
+      like: "Tetszik"
+      likes:
+        other: "<%= count %> ember kedveli"
+        zero: "<%= count %> kedveli"
+      limited: "Korlátozott"
+      more_comments:
+        few: "Mutasd a többi <%= count %> hozzászólást"
+        many: "Mutasd a további <%= count %> hozzászólást"
+        one: "Mutasd a többi <%= count %> hozzászólást"
+        other: "Mutasd a többi <%= count %> hozzászólást"
+        two: "Mutasd a többi <%= count %> hozzászólást"
+        zero: "Mutasd a többi <%= count %> hozzászólást"
+      original_post_deleted: "Eredeti bejegyzés törölve a szerzője által."
+      public: "Nyilvános"
+      reshare: "Megosztás"
+      reshares:
+        few: "<%= count %> megosztás"
+        many: "<%= count %> megosztás"
+        one: "<%= count %> megosztás"
+        other: "<%= count %> megosztás"
+        two: "<%= count %> megosztás"
+        zero: "<%= count %> megosztás"
+      show_nsfw_post: "Bejegyzés megjelenítése"
+      show_nsfw_posts: "Összes megjelenítése"
+      tags:
+        follow: "címke követése"
+        following: "#<%= tag %> követve"
+        stop_following: "követés leállítása #<%= tag %>"
+      unfollow: "Nem követem"
+      unlike: "Nem tetszik"
+      via: "<%= provider %> használatával"
+    tags:
+      wasnt_that_interesting: "Oké, azt hiszem a #<%= tagName %> nem volt annyira érdekes."
+    timeago:
+      day: "egy nappal"
+      days: "%d nappal"
+      hour: "körülbelül egy órával"
+      hours: "körülbelül %d órával"
+      minute: "körülbelül egy perccel"
+      minutes: "%d perccel"
+      month: "körülbelül egy hónappal"
+      months: "%d hónappal"
+      prefixAgo: ""
+      prefixFromNow: ""
+      seconds: "kevesebb mint egy perccel"
+      suffixAgo: "ezelőtt"
+      suffixFromNow: "mostantól"
+      wordSeparator: " "
+      year: "körülbelül egy évvel"
+      years: "%d évvel"
+    videos:
+      unknown: "Ismeretlen videó tipus"
+      watch: "Videó megtekintése itt: <%= provider %>"
+    viewer:
+      comment: "Hozzászólás"
+      follow_post: "Követem"
+      home: "KEZDŐLAP"
+      like: "Tetszik"
+      reshare: "Megosztás"
+      reshared: "Megosztva"
+      stop_following_post: "Nem követem többé"
+      unlike: "Nem tetszik"

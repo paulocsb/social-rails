@@ -1,0 +1,10 @@
+#   Copyright (c) 2010-2013, Diaspora Inc.  This file is
+#   licensed under the Affero General Public License version 3 or later.  See
+#   the COPYRIGHT file.
+
+
+
+en_pirate:
+  devise:
+    invitations:
+      invitation_token_invalid: "The invitation token provided is not valid!"
