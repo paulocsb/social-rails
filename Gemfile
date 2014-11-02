@@ -181,6 +181,11 @@ group :production do # we don't install these on travis to speed up test runs
   # Third party asset hosting
 
   gem 'asset_sync', '1.1.0', :require => false
+
+  # Rails 12factor - Need for Heroku
+
+  gem 'rails_12factor'
+  
 end
 
 group :development do
