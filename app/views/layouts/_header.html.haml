@@ -2,15 +2,16 @@
 -#   licensed under the Affero General Public License version 3 or later.  See
 -#   the COPYRIGHT file.
 
-%header
+%header.navbar.navbar-default.top-nav.navbar-fixed-top
   - unless current_user
-    .container{style: "position:relative;"}
-      = link_to content_tag(:div, nil, class: 'diaspora_header_logo branding-header-logo'), root_path
+    .container
+      .navbar-header
+        = link_to image_tag("branding/header-logo.png", :class => "img-logo"), root_path, class: 'navbar-brand'
 
-      %ul#landing_nav
+      .pull-right.navbar-brand
         - unless current_page?(controller: :registrations, action: :new)
-          %li= link_to t('devise.shared.links.sign_up'), new_user_registration_path, class: 'login'
-        %li= link_to t('devise.shared.links.sign_in'), new_user_session_path, class: 'login'
+          = link_to t('devise.shared.links.sign_up'), new_user_registration_path, class: 'btn btn-default'
+        = link_to t('devise.shared.links.sign_in'), new_user_session_path, class: 'btn btn-success'
       #lightbox
         #lightbox-content
           %a#lightbox-close-link(href='#')

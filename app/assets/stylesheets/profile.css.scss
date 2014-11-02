@@ -1,17 +1,83 @@
 #profile_container {
-  .profile_header {
-    border-bottom: 1px solid $border-grey;
-    margin-bottom: 20px;
+  
+  padding-top: 10px;
 
-    #edit_profile, #unblock_user_button, .aspect_dropdown {
+  .stream-profile{
+    padding: 0;
+  }
+
+  .cover ul li {
+    .active {
+      background: rgba(0,0,0,0.7);
+    }
+  }
+
+  .cover .top img {
+    border: none;
+    text-align: center;
+  }
+
+  .timeline-cover {
+    margin-bottom: 10px;
+    .cover {
+      position: relative;
+
+      .top {
+        height: 170px;
+        background: #DADADA;
+        border-left: 1px solid $grey-light;
+        border-right: 1px solid $grey-light;
+      }
+
+      ul {
+        position: absolute;
+        overflow: hidden;
+        float: left;
+        bottom: 0;
+        width: 100%;
+        padding: 0;
+
+        li {
+          display: block;
+          float: left;
+          height: 35px;
+          margin-right: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .timeline-cover .cover.image {
+    ul {
+      padding-left: 140px;
+    }
+
+    .photo {
+      position: relative;
+      float: left;
+      margin: -105px 0 0 20px;
+    }
+  }
+
+  .profile_header {
+    // border-bottom: 1px solid $border-grey;
+    // margin-bottom: 20px;
+
+    #unblock_user_button, .aspect_dropdown {
       margin-top: 5px;
       margin-right: 10px;
     }
 
+    #edit_profile {
+      margin-top: 15px;
+      margin-right: 10px; 
+    }
+
     #author_info {
-      h2 {
-        line-height: 35px;
-        margin-top: 10px;
+      h3 {
+        line-height: 30px;
+        margin-top: 5px;
         margin-bottom: 0px;
       }
       #name {
@@ -48,9 +114,8 @@
     }
 
     #profile_horizontal_bar {
-      border-top: 1px dashed $border-grey;
       min-height: 50px;
-      margin-top: 10px;
+      background: white !important;
       #profile_buttons {
         padding: 10px 0;
         > .profile_button {
@@ -70,6 +135,7 @@
       ul#profile_nav {
         list-style: none;
         margin: 0;
+        padding-left: 140px;
         > li {
           display: inline-block;
           &.active {
@@ -100,13 +166,12 @@
   }
 
   #profile {
-    border-right: 1px solid $border-grey;
-    padding: 10px 20px;
     #profile_photo {
-      margin-top: 10px;
-      padding-bottom: 10px;
-      border-bottom: 1px dashed $border-grey;
-      text-align: center;
+      img {
+        width: 100px;
+        height: 100px;
+        border: 3px solid white;
+      }
     }
 
     ul#profile_information {

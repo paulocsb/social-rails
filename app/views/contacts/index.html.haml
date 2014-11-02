@@ -3,23 +3,25 @@
 
 .container-fluid#contacts_container
   .row-fluid
-    .span3
-      = render 'contacts/sidebar'
+    .container.container-margin-top
+      .col-md-4
+        .container-box.contacts
+          = render 'contacts/sidebar'
 
-    .span9
-      #people_stream.stream.contacts
-        = render 'contacts/header'
+      .col-md-8.col-md-8-left
+        #people_stream.stream.container-box.contacts
+          = render 'contacts/header'
 
-        - if @contacts_size > 0
-          - @contacts.each do |contact|
-            = render 'contacts/contact', :contact => contact
-        - else
-          .no_contacts
-            %h3
-              = t('.no_contacts')
-            %p
-              != t('.no_contacts_message',
-                   :community_spotlight => link_to(t('.community_spotlight'), community_spotlight_path))
+          - if @contacts_size > 0
+            - @contacts.each do |contact|
+              = render 'contacts/contact', :contact => contact
+          - else
+            .no_contacts
+              %h3
+                = t('.no_contacts')
+              %p
+                != t('.no_contacts_message',
+                     :community_spotlight => link_to(t('.community_spotlight'), community_spotlight_path))
 
 -if @aspect
   #new_conversation_pane

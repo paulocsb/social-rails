@@ -12,19 +12,19 @@ form.block-form {
     color : $text-dark-grey;
   }
 
-  input {
-    &:invalid,
-    &:invalid:required,
-    &:invalid:required:focus {
-      -webkit-box-shadow : none;
-      -moz-box-shadow : none;
-      box-shadow : none;
-      box-shadow : none;
+  // input {
+  //   &:invalid,
+  //   &:invalid:required,
+  //   &:invalid:required:focus {
+  //     -webkit-box-shadow : none;
+  //     -moz-box-shadow : none;
+  //     box-shadow : none;
+  //     box-shadow : none;
 
-      border : none;
-      color : $text-dark-grey;
-    }
-  }
+  //     border : none;
+  //     color : $text-dark-grey;
+  //   }
+  // }
 
   fieldset {
     @include border-radius(5px);
@@ -78,27 +78,27 @@ form.block-form {
     }
   }
 
-  input[type=submit] {
-    text-align : center;
-    display : block;
-    width : 100%;
-    padding : 8px 0;
-  }
+  // input[type=submit] {
+  //   text-align : center;
+  //   display : block;
+  //   width : 100%;
+  //   padding : 8px 0;
+  // }
 }
 
-textarea, input[type=text], input[type=password], input[type=search] {
-  &:focus, 
-  &:invalid,
-  &:invalid:focus,
-  &:invalid:required,
-  &:invalid:required:focus {
-    border: 1px solid $border-dark-grey;
-    outline: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    color : $text-dark-grey;
-  }
-}
+// textarea, input[type=text], input[type=password], input[type=search] {
+//   &:focus, 
+//   &:invalid,
+//   &:invalid:focus,
+//   &:invalid:required,
+//   &:invalid:required:focus {
+//     border: 1px solid $border-dark-grey;
+//     outline: none;
+//     -webkit-box-shadow: none;
+//     box-shadow: none;
+//     color : $text-dark-grey;
+//   }
+// }
 
 /* buttons to be extracted? */
 .new-btn {

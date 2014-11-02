@@ -18,9 +18,9 @@ header {
       font-size: 13px;
     }
   }
-  #conversations_badge, #notification_badge {
-    background: none;
-  }
+  // #conversations_badge, #notification_badge {
+  //   background: none;
+  // }
   #notification_badge.active {
     @include border-radius(0);
   }

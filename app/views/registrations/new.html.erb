@@ -1,81 +1,62 @@
-<div id="registration">
-  <div class="container">
+<div class="container">
+	<div class="col-lg-10 col-md-offset-1 box-signup">
+		<div class="ibox border-left border-right border-bottom">
+			<div class="ibox-title border-bottom">
+				<h5><%= t('.sign_up') %></h5>
+			</div>
+			<div class="ibox-content">
+				<div class="row">
+					<div class="col-xs-12 col-md-8 b-r col-md-offset-2">
+						<div class="form-group col-xs-12 col-sm-12">
+							<h3 class="m-t-none m-b"><%= t('.sign_up') %></h3>
+							<p>Sign in today for more expirience.</p>
+						</div>
+						<div class="clear-fix"></div>
+						<%= form_for(resource, :url => registration_path(resource_name), :html => {:autocomplete => "off"}) do |f| %>
+							<div class="form-group col-xs-6 col-sm-6">
+								<%= f.email_field :email, :placeholder => "exemple@email.com", :title => t('registrations.new.enter_email'), :required => true, class: "form-control" %>
+							</div>
 
-    <div class="row">
-      <div class="span4" id="image-container">
-        <%= image_tag('signupimages@2x_mini.jpg', :id => "collage") %>
-      </div>
+							<div class="form-group col-xs-6 col-sm-6">
+								<%= f.text_field :username, :placeholder => "username", :title => t('registrations.new.enter_username'), :required => true, :pattern => "[A-Za-z0-9_]+", class: "form-control" %>
+							</div>
 
-      <div class="span8">
-        <h1 id="create-something-text">
-          <%= t('.hey_make').html_safe %>
-        </h1>
+							<div class="form-group col-xs-12 col-sm-12">
+								<%= f.password_field :password, :placeholder => "••••••••", :title => t('registrations.new.enter_password'), :required => true, :pattern => "......+", class: "form-control" %>
+							</div>
 
-        <h3 id="diaspora-hearts">
-          <%= t('.diaspora') %>
-        </h3>
+							<div class="form-group col-xs-12 col-sm-12">
+								<%= f.password_field :password_confirmation, :placeholder => "••••••••", :title => t('registrations.new.enter_password_again'), :required => true, :pattern => "......+", class: "form-control" %>
+							</div>
 
-        <h4 id="sign-up-text">
-          <%= t('.sign_up') %>
-        </h4>
+							<div class="form-group col-xs-12 col-sm-12">
+								<% if AppConfig.settings.captcha.enable? %>
+	                <div class="control-group" id="captcha">
+	                  <%= show_simple_captcha(:object => 'user', :code_type => 'numeric') %>
+	                </div>
+	              <% end %>
+	              <%= invite_hidden_tag(invite) %>
+							</div>
 
-        <%= form_for(resource, :url => registration_path(resource_name), :html => {:class => "form-horizontal block-form", :autocomplete => "off"}) do |f| %>
-            <fieldset>
-              <div class="control-group">
-                <label class="control-label" for="user_email">
-                  <%= t('.email') %>
-                </label>
+							<div class="form-group col-xs-12 col-sm-12">
+								<% if AppConfig.settings.terms.enable? %>
+		              <div id="terms" class="text-center">
+		                <%= t('.terms', terms_link: link_to(t('.terms_link'), terms_path, target: "_blank")).html_safe %>
+		              </div>
+		            <% end %>
+							</div>
 
-                <div class="controls">
-                  <%= f.email_field :email, :placeholder => "luke@hoth.net", :title => t('registrations.new.enter_email'), :required => true %>
-                </div>
-              </div>
+							<div class="clear-fix"></div>
 
-              <div class="control-group">
-                <label class="control-label" for="user_username">
-                  <%= t('.username') %>
-                </label>
-
-                <div class="controls">
-                  <%= f.text_field :username, :placeholder => "jedi_guy", :title => t('registrations.new.enter_username'), :required => true, :pattern => "[A-Za-z0-9_]+" %>
-                </div>
-              </div>
-
-              <div class="control-group">
-                <label class="control-label" for="user_password">
-                  <%= t('.password') %>
-                </label>
-
-                <div class="controls">
-                  <%= f.password_field :password, :placeholder => "••••••••", :title => t('registrations.new.enter_password'), :required => true, :pattern => "......+" %>
-                </div>
-              </div>
-
-              <div class="control-group">
-                <label class="control-label" for="user_password_confirmation">
-                  <%= t('.password_confirmation') %>
-                </label>
-
-                <div class="controls">
-                  <%= f.password_field :password_confirmation, :placeholder => "••••••••", :title => t('registrations.new.enter_password_again'), :required => true, :pattern => "......+" %>
-                </div>
-              </div>
-
-              <% if AppConfig.settings.captcha.enable? %>
-                <div class="control-group" id="captcha">
-                  <%= show_simple_captcha(:object => 'user', :code_type => 'numeric') %>
-                </div>
-              <% end %>
-              <%= invite_hidden_tag(invite) %>
-            </fieldset>
-            <% if AppConfig.settings.terms.enable? %>
-              <div id="terms" class="text-center">
-                <%= t('.terms', terms_link: link_to(t('.terms_link'), terms_path, target: "_blank")).html_safe %>
-              </div>
-            <% end %>
-            <%= f.submit t('.continue'), class: "new-btn", data: {disable_with: t('.submitting')} %>
-        <% end %>
-      </div>
-    </div>
-  </div>
+							<div class="form-group col-xs-12 col-sm-12">
+								<div class="form-group col-md-offset-5">
+									<%= f.submit t('.continue'), class: "btn btn-primary", data: {disable_with: t('.submitting')} %>
+								</div>
+							</div>
+						<% end %>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

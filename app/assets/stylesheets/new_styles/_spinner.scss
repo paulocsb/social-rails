@@ -33,17 +33,18 @@
 }
 
 .loader {
-  -webkit-mask-image: image-url('static-loader.png');
-  -webkit-animation: spin 1s infinite ease-in-out,
-  fade-in 0.2s ease-in;
-  -moz-animation: spin 1s infinite ease-in-out,
-  fade-in 0.2s ease-in;
+  // -webkit-mask-image: image-url('static-loader.png');
+  // -webkit-animation: spin 1s infinite ease-in-out,
+  // fade-in 0.2s ease-in;
+  // -moz-animation: spin 1s infinite ease-in-out,
+  // fade-in 0.2s ease-in;
 
-  background-image : image-url("static-loader.png");
+  // background-image : image-url("static-loader.png");
 
-  display: inline-block;
-  width : 14px;
-  height: 14px;
+  // display: inline-block;
+  // width : 14px;
+  // height: 14px;
+  color: $grey-light;
 
   &.hidden{
     display : none;

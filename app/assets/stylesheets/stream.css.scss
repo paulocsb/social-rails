@@ -1,6 +1,70 @@
 .stream_container {
   #publisher {
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
   }
   .well#ignore-info { text-align: center; }
+
+  #main_stream {
+  	.stream_element {
+  		padding: 0;
+  		border-bottom: 0;
+
+  		.media-body .post-content {
+		  	margin-bottom: 10px;
+			}
+
+			.likes {
+				.entypo.heart, .entypo.heart-empty {
+					font-size: 16px;
+				}
+				.fa.fa-heart, .fa.fa-heart-o {
+					font-size: 14px;
+				}
+			  .entypo.heart, .entypo.heart-empty, .fa.fa-heart, .fa.fa-heart-o {
+			    line-height: 16px;
+			    vertical-align: top;
+			    margin-right: 5px;
+			  }
+			  .bd {
+			    display: inline-block;
+			    .expand_likes {
+			      vertical-align: text-bottom;
+			    }
+			  }
+			}
+
+  		.info {
+  			font-size: 11px;
+  		}
+  	}
+	}
+
+  .stream {  	
+	  .timeline-box-generic {
+		  padding: 5px;
+	    margin-bottom: 15px;
+	    padding: 0;
+	    border: 1px solid #e5e6e7;
+	    background: white;
+		}
+
+		.timeline-top-info {
+	    padding: 10px;
+		}
+
+		.timeline-post-time {
+		  color: #c2c2c2;
+	    font-size: 10px;
+		}
+
+		.timeline-header-photo {
+		  width: 35px; 
+		  margin: 0 15px 0 0;
+		}
+
+		.innerAll {
+	    padding: 10px;
+	    position: relative;
+		}
+	}
 }

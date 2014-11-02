@@ -13,27 +13,40 @@
 
 .container-fluid#profile_container
   .row-fluid
-    .span3
-      #profile
-        -# here be JS
+    .container
+      .timeline-cover
+        .profile_header
+          -# more js
 
-    .span9
-      .profile_header
-        -# more JS
+        .widget.cover.image
+          .widget-body.padding-none.margin-none
+            .photo
+              #profile
+                -# here be JS
+            .innerAll.pull-left.stats-box
+          .clearfix
 
-      .stream_container
+      / .span3
+      /   #profile
+      /     -# here be JS
 
-        -if user_signed_in? && current_page?(person_path(current_user.person))
-          = render 'publisher/publisher', publisher_aspects_for(nil)
+      .col-lg-7.col-md-6.stream-profile
+        / .profile_header
+        /   -# more JS
 
-        #main_stream.stream
-          -# JS
+        .stream_container
 
-        #paginate
-          %span.loader.hidden
+          -if user_signed_in? && current_page?(person_path(current_user.person))
+            = render 'publisher/publisher', publisher_aspects_for(nil)
 
-      %a{:id=>"back-to-top", :title=>"#{t('layouts.application.back_to_top')}", :href=>"#"}
-        &#8679;
+          #main_stream.stream
+            -# JS
+
+          #paginate
+            %span.loader.hidden
+
+        / %a{:id=>"back-to-top", :title=>"#{t('layouts.application.back_to_top')}", :href=>"#"}
+        /   &#8679;
 
 -if user_signed_in? && @person
   #new_status_message_pane

@@ -47,6 +47,8 @@ var app = {
     this.setupBackboneLinks();
     this.setupGlobalViews();
     this.setupDisabledLinks();
+
+    $('.selectpicker').selectpicker();
   },
 
   hasPreload : function(prop) {

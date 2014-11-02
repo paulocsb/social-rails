@@ -6,13 +6,27 @@
   & > .media {
     margin: 0px;
   }
+
+  .status-message-location {
+    .near-from {
+      font-size: smaller;
+      color: #aaa;
+      width: 100%;
+      float: left;
+      margin-bottom: 10px;
+    }
+    .address {
+      font-size: 11px;
+      color: #bbb;
+    }
+  }
 }
 
 #main_stream .stream_element {
   & > .media {
     & > .img > .avatar.small {
-      height: 50px;
-      width: 50px;
+      height: 30px;
+      width: 30px;
     }
     .author {
       font-weight: bold;
@@ -30,9 +44,14 @@
       font-size: 12px;
       line-height: 16px;
       .bd { display: inline-block; }
-      .entypo.heart {
-        display: inline-block;
+      .entypo.heart, .entypo.heart-empty {
         font-size: 16px;
+      }
+      .fa.fa-heart, .fa.fa-heart-o {
+        font-size: 14px;
+      }
+      .entypo.heart, .entypo.heart-empty, .fa.fa-heart, .fa.fa-heart-o {
+        display: inline-block;
         vertical-align: top;
         margin-top: -2px;
         margin-right: 5px;
@@ -68,7 +87,11 @@
     }
     .status-message-location .near-from {
       font-size: 11px;
-      color: $text-grey;
+      font-size: smaller;
+      color: #aaa;
+      width: 100%;
+      float: left;
+      margin-bottom: 10px;
     }
     .grey { color: $text-grey; }
     .post-content p:last-of-type { margin-bottom: 0; }
@@ -91,6 +114,12 @@
     }
   }
 
+  .info {
+    .reshare {
+      border-left: 0 none !important;
+    }
+  }
+  
   .collapsible {
     overflow: hidden;
     position: relative;
@@ -111,12 +140,9 @@
       text-align: center;
       line-height: 48px;
       font-size: .8em;
-      color: $grey;
-      text-shadow: 0 0 7px #FFF;
+      color: $blue;
       cursor: pointer;
-      border-bottom: 2px solid $border-grey;
-      @include border-radius(0, 0, 3px, 3px);
-      @include linear-gradient(rgba(255,255,255,0) , #EEE, 0%, 95%);
+      border-bottom: 1px dotted $border-grey;
       background-color: transparent;
     }
 
@@ -135,6 +161,11 @@
     }
   }
 
+  a.author {
+    font-weight: bold;
+    unicode-bidi: bidi-override;
+  }
+
   &.highlighted {
     padding-left: 8px;
     border-left: 3px solid $creation-blue;
@@ -143,5 +174,21 @@
   &.post_preview {
     background-color: lighten($creation-blue,45%);
     border: 1px solid $creation-blue;
+  }
+
+  .photo_attachments {
+    margin-bottom: 10px;
+
+    .stream-photo-big {
+      margin-bottom: 5px;
+    }
+
+    .stream-photo-small {
+      margin-right: 1px;
+    }
+
+    img {
+      max-width: 100%;
+    }
   }
 }

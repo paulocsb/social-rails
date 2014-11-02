@@ -39,29 +39,29 @@
 
 = error_messages_for profile
 
-%h4
-  = t('profiles.edit.your_name')
+.form-group
+  %h4
+    = t('profiles.edit.your_name')
 
-.row-fluid
-  .span6
-    = label_tag 'profile[first_name]', t('profiles.edit.first_name')
-    = text_field_tag 'profile[first_name]', profile.first_name, :class => 'span12'
-  .span6
-    = label_tag 'profile[last_name]', t('profiles.edit.last_name')
-    = text_field_tag 'profile[last_name]', profile.last_name, :class => 'span12'
+  .row-fluid
+    .span6
+      = label_tag 'profile[first_name]', t('profiles.edit.first_name')
+      = text_field_tag 'profile[first_name]', profile.first_name, :class => 'form-control input-sm'
+    .x-small-horizontal-spacer
+    .span6
+      = label_tag 'profile[last_name]', t('profiles.edit.last_name')
+      = text_field_tag 'profile[last_name]', profile.last_name, :class => 'form-control input-sm'
 
-.small-horizontal-spacer
+  .small-horizontal-spacer
 
-%h4
-  = t('profiles.edit.your_tags')
+  / %h4
+  /   = t('profiles.edit.your_tags')
 
-= text_field_tag 'profile[tag_string]', "", :placeholder => t('profiles.edit.your_tags_placeholder')
+  / = text_field_tag 'profile[tag_string]', "", :placeholder => t('profiles.edit.your_tags_placeholder')
 
-.small-horizontal-spacer
+  / .small-horizontal-spacer
 
-%h4
-  = t('profiles.edit.your_photo')
+  %h4
+    = t('profiles.edit.your_photo')
 
-= render 'photos/new_profile_photo', :aspect => aspect, :person => person
-
-.small-horizontal-spacer
+  = render 'photos/new_profile_photo', :aspect => aspect, :person => person

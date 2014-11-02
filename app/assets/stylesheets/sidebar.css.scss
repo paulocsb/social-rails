@@ -3,12 +3,14 @@
 	margin-bottom: 20px;
 	margin-left: 4px;
 
-	img {
-		float: left;
-	}
+  img.avatar {
+    width: 136px;
+    height: 136px;
+    // float: left;
+  }
 
 	h4 {
-		margin-left: 60px;
+		// margin-left: 60px;
 		padding-top: 15px;
 		overflow: hidden;
 		text-overflow: ellipsis;
@@ -24,6 +26,7 @@
 	float: left;
 	margin: 0px;
 	margin-right: 10px;
+  margin-top: 12px;
 }
 
 #stream_selection {
@@ -96,6 +99,7 @@
 }
 
 .rightBar {
+  margin-top: 12px;
   .section {
     margin-bottom: 20px;
 
@@ -188,6 +192,7 @@
       #invite_code {
         width: 100%;
         @include box-sizing(border-box);
+        font-size: 10px;
       }
     }
   }

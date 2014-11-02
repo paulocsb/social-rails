@@ -54,10 +54,10 @@ defaults:
       post_counts: false
       comment_counts: false
   settings:
-    pod_name: 'diaspora*'
+    pod_name: 'Accademicos'
     enable_registrations: true
     autofollow_on_join: true
-    autofollow_on_join_user: 'diasporahq@joindiaspora.com'
+    autofollow_on_join_user: 'join@accademicos.com.br'
     invitations:
       open: true
       count: 25
@@ -112,7 +112,7 @@ defaults:
       secret:
   mail:
     enable: false
-    sender_address: 'no-reply@example.org'
+    sender_address: 'no-reply@accademicos.com.br'
     method: 'smtp'
     smtp:
       host: 'localhost'

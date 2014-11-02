@@ -4,9 +4,34 @@
   position: relative;
   margin-top: 0;
   margin-bottom: 0;
-  padding: 0 12px 22px 12px;
+  padding: 0 0 15px;
   top: 0;
-  border-bottom: 1px #eee solid;
+  border-bottom: 1px solid #e5e6e7;
+
+  .share input, 
+  .share textarea,
+  .share select,
+  .share .uneditable-input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .share {
+      margin: 15px 5px 1px 5px;
+  }
+  .share .form-control {
+      -moz-border-bottom-colors: none;
+      -moz-border-left-colors: none;
+      -moz-border-right-colors: none;
+      -moz-border-top-colors: none;
+      border-color: -moz-use-text-color -moz-use-text-color #efefef;
+      border-image: none;
+      border-radius: 0 0 3px 3px;
+      border-style: none none solid;
+      border-width: medium medium 1px;
+      box-shadow: none;
+      width: 100%;
+      font-size: 12px;
+  }
 
   form {
     textarea {
@@ -117,7 +142,7 @@
     bottom: 1px !important;
     display: inline-block;
     margin: 0;
-    padding: .3em .3em 3px;
+    padding: .4em .3em 3px;
     position: absolute !important;
     right: 6px;
     cursor: pointer;
@@ -132,17 +157,16 @@
       }
     }
 
-    img {
+    i {
       @include opacity(0.4);
-      vertical-align: bottom;
     }
 
     &:hover {
       color: $text-dark-grey;
       cursor: pointer;
 
-      img {
-        @include opacity(0.8);
+      i {
+        @include opacity(1);
       }
     }
 
@@ -150,7 +174,7 @@
       color: #444;
       text-shadow: 0 1px 0 #fafafa;
 
-      img {
+      i {
         @include opacity(1);
       }
     }
@@ -167,8 +191,9 @@
     z-index: 5;
     padding: 3px;
     position: absolute;
-    right: 6px;
-    margin-top: 9px;
+    right: 5px;
+    margin-top: 2px;
+    color: #555555;
 
     .icons-deletelabel {
       height: 14px;
@@ -182,7 +207,7 @@
   
   .markdownIndications {
     position: absolute;
-    bottom: 0px;
+    bottom: 5px;
   }
 
   @include border-radius(2px);
@@ -191,11 +216,11 @@
   background: #fff;
 
   &.active {
-    border: 1px solid $border-dark-grey;
+    // border: 1px solid $border-dark-grey;
   }
 
   position: relative;
-  padding-right: 10px;
+  padding: 5px 10px 10px 9px;
 
   textarea {
     z-index: 2;
@@ -304,18 +329,18 @@
     bottom: 1px !important;
     display: inline-block;
     margin: 0;
+    padding: .4em .3em 3px;
     position: absolute !important;
     right: 30px;
     cursor: pointer;
-    img {
-      padding-top: 2px;
+    i {
       @include opacity(0.4);
     }
     &:hover {
       color: $text-dark-grey;
       cursor: pointer;
-      img {
-        @include opacity(0.8);
+      i {
+        @include opacity(1);
       }
     }
   }
@@ -339,13 +364,13 @@
   }
 
   .btn {
-    height: 19px;
-    width: 19px;
+    height: 25px;
+    width: 30px;
   }
 }
 
 #poll_creator_container {
-  border: 1px solid $border-dark-grey;
+  border: 1px solid $border-grey;
   padding: 5px;
   margin-top: 5px;
   @include border-radius(2px);

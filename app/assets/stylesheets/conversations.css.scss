@@ -8,8 +8,8 @@
     }
 
     .avatar{
-      width: 50px;
-      height: 50px;
+      width: 35px;
+      height: 35px;
     }
 
     p {
@@ -17,7 +17,7 @@
       word-wrap: break-word;
       &:last-child { margin-bottom: 0; }
     }
-    .new_message { border-bottom: none; }
+    .new_message { border-bottom: 0 !important; }
     .timestamp { font-size: 11px; }
   }
 
@@ -26,6 +26,7 @@
     .media {
       margin-bottom: 0px;
       margin-left: 0px;
+      margin-right: 0px;
     }
 
     &:hover:not(.selected), &.selected {
@@ -35,6 +36,7 @@
         color: $white;
       }
       .timeago { color: $background-grey; }
+      .last_author { font-weight: bold; }
     }
 
     &:hover, &.unread:hover, &.selected:hover {
@@ -57,7 +59,7 @@
       text-overflow: ellipsis;
       white-space: nowrap;
     }
-    .last_author { color: $text-dark-grey; }
+    .last_author { color: $blue; font-weight: bold; }
 
     .message_count, .unread_message_count {
       margin-left: 3px;
@@ -110,7 +112,6 @@
     }
 
     .timeago {
-      float: right;
       line-height: normal;
       font-weight: normal;
       color: $blue;
@@ -120,10 +121,6 @@
 
 #conversation_show {
   .conversation_participants {
-    box-shadow: 0 2px 3px -3px #666;
-    -webkit-box-shadow: 0 2px 3px -3px #666;
-    -moz-box-shadow: 0 2px 3px -3px #666;
-
     background-color: $background-white;
     margin-bottom: 5px;
     border-bottom: 1px solid $border-grey;
@@ -164,6 +161,7 @@
 
   .stream .stream_element {
     padding: 10px;
+    border-bottom: 0 none !important;
   }
 }
 
@@ -174,8 +172,7 @@
   }
 
   #left_pane_header {
-    padding: 10px;
-    padding-right: 20px;
+    padding: 10px 0;
     border-bottom: 1px solid $border-grey;
   }
 
@@ -195,7 +192,8 @@
   font-weight: bold;
   color: #ccc;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
 
 #no_conversation_text {

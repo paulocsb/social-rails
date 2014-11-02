@@ -1,12 +1,19 @@
 .comment_stream {
+  
+  a.author {
+    color: $blue;
+  }
+
   .show_comments {
     margin-top: 5px;
     border-top: 1px solid $border-grey;
     a {
-      color: $text-grey;
-      font-size: 13px;
+      color: $blue;
+      font-size: 12px;
     }
-    .media { margin-top: 10px; }
+    a.toggle_post_comments {
+      color: $text-grey;
+    }
   }
   .comments > .comment {
     .avatar {
@@ -14,9 +21,8 @@
       width: 30px;
     }
     margin: 0;
-    border-top: 1px dotted $border-grey;
-    &.no-border { border: none; }
-    padding: 10px 0;
+    &.no-border { border: none; padding: 0; }
+
     .comment-content p:last-of-type { margin-bottom: 0; }
 
     .info {
@@ -37,6 +43,69 @@
     padding-left: 12px;
     width: 95%;
   }
-  .comment_box { width: 95%; }
-  .comment_box:focus, .comment_box:valid { min-height: 100px; }
+
+  .comment {
+    &.media {
+      margin-left: 0;
+      margin-right: 0;
+      margin-top:10px;
+
+      .controls {
+        .comment_delete, .comment_report {
+          @include transition(opacity);
+          @include opacity(0);
+        }
+      }
+      &:hover {
+        .controls {
+          .comment_delete, .comment_report {
+            @include opacity(0.3);
+          }
+          .comment_delete:hover, .comment_report:hover {
+            @include opacity(1);
+          }
+        }
+      }
+    }
+
+    .youtube-player, .vimeo-player {
+      border: none;
+      height: 250px;
+      width: 400px;
+    }
+
+    .ltr {
+      ol, ul {
+        padding-left: 2em;
+        li {
+          padding: 0px;
+          border: none;
+          list-style: inherit;
+        }
+      }
+    }
+
+    .right {
+      right: 4px;
+    }
+
+    form.new_comment {
+      input {
+        display: none;
+      }
+
+      textarea {
+        height: 28px;
+        font-size: 12px;
+        margin-bottom: 5px;
+        width: 100%;
+      }
+
+      &.open {
+        input {
+          display: block;
+        }
+      }
+    }
+  }
 }

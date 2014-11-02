@@ -57,15 +57,17 @@
     }
     window.onload = createUploader;
 
-#profile_photo_upload
+#profile_photo_upload{:style => "position:relative;"}
   = owner_image_tag(:thumb_medium)
 
   .clearfix
+  .x-small-horizontal-spacer
 
-  #file-upload.btn
+  #file-upload.btn.btn-sm-.btn-primary
     =t('.upload')
 
-  = image_tag('mobile-spinner.gif', :class => 'hidden', :style => "z-index:-1", :id => 'file-upload-spinner')
+  #file-upload-spinner.hidden.opacity-box{:style => "z-index:1; position:absolute; background:white; width:100%; height:100%; top: 0; left: 0;"}
+    %i.fa.fa-spin.fa-spinner.fa-5x.grey{:style => "position:absolute; top: 25%; left: 45%;"}
 
   %p
     #fileInfo

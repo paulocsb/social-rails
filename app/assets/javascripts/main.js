@@ -35,8 +35,12 @@
 //= require view
 //= require aspects-dropdown
 //= require mentions
-//= require bootstrap-tooltip
-//= require bootstrap-popover
-//= require bootstrap-dropdown
-//= require bootstrap-modal
+//= require bootstrap
+//= require bootstrap-select
+// require bootstrap-tooltip
+// require bootstrap-popover
+// require bootstrap-dropdown
+// require bootstrap-modal
 //= require osmlocator
+
+

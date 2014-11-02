@@ -22,7 +22,7 @@
     #aspect_name_form
       = form_for @aspect, :remote => true do |aspect|
         = aspect.text_field :name, :maxlength => 20
-        = aspect.submit t('aspects.edit.update'), 'data-disable-with' => t('aspects.edit.updating'), :class => "btn"
+        = aspect.submit t('aspects.edit.update'), 'data-disable-with' => t('aspects.edit.updating'), :class => "btn btn-sm"
 
   - else
     %h3

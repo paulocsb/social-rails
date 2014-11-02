@@ -213,7 +213,7 @@ app.views.Publisher = Backbone.View.extend({
   // creates the location
   showLocation: function(){
     if($('#location').length == 0){
-      $('#location_container').append('<div id="location"></div>');
+      $('#location_container').append('<div id="location" class="center"></div>');
       this.el_wrapper.addClass('with_location');
       this.view_locator = new app.views.Location();
     }

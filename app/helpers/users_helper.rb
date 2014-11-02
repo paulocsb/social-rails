@@ -4,6 +4,6 @@ module UsersHelper
   end
 
   def owner_image_link
-    person_image_link(current_user.person, :size => :thumb_small)
+    person_image_link(current_user.person, :size => :thumb_large)
   end
 end

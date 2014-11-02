@@ -5,7 +5,6 @@
   }
 
   .stream_element {
-    border-bottom: 1px solid $border-grey;
 
     h1, h2, h3, h4, h5, h6 {
       word-wrap: break-word;
@@ -46,7 +45,15 @@
   }
 
   .photo_attachments {
-    margin-top: 7px;
+    margin-bottom: 10px;
+
+    .stream-photo-big {
+      margin-bottom: 5px;
+    }
+
+    .stream-photo-small {
+      margin-right: 1px;
+    }
   }
 
   img {
@@ -132,10 +139,7 @@
   &.media {
     margin-left: 0;
     margin-right: 0;
-
-    border-top: 1px dotted #aaa;
-
-    padding-top: 10px;
+    margin-top:10px;
 
     .controls {
       .comment_delete, .comment_report {
@@ -179,7 +183,6 @@
 
 .stream_element {
   .new_comment_form_wrapper {
-    width: 415px;
   }
 }
 
@@ -195,6 +198,7 @@
     color: #aaa;
     width: 100%;
     float: left;
+    margin-bottom: 10px;
   }
   .address {
     font-size: 11px;
@@ -216,9 +220,10 @@ form.new_comment {
   }
 
   textarea {
-    height: 21px;
+    height: 28px;
     font-size: 12px;
-    width: 364px;
+    margin-bottom: 5px;
+    width: 100%;
   }
 
   &.open {
@@ -258,16 +263,13 @@ form.new_comment {
       bottom: 0;
       left: 0;
       right: 0;
-      height: 30px;
+      height: 33px;
       text-align: center;
       line-height: 48px;
       font-size: .8em;
-      color: $grey;
-      text-shadow: 0 0 7px #FFF;
+      color: $blue;
       cursor: pointer;
-      border-bottom: 2px solid $border-grey;
-      @include border-radius(0, 0, 3px, 3px);
-      @include linear-gradient(rgba(255,255,255,0) , #EEE, 0%, 95%);
+      border-bottom: 1px dotted $border-grey;
       background-color: transparent;
     }
 

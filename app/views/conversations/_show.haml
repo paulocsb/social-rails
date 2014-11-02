@@ -3,7 +3,7 @@
 -#   the COPYRIGHT file.
 
 .conversation_participants
-  = link_to(content_tag(:div, nil, :class => 'icons-deletelabel'),
+  = link_to(content_tag(:div, nil, :class => 'fa fa-trash fa-2x grey'),
             conversation_visibility_path(conversation),
             :method => 'delete',
             :data => { :confirm => "#{t('.delete')}?" },
@@ -12,6 +12,8 @@
 
   %h3{ :class => direction_for(conversation.subject) }
     = conversation.subject
+  %h6.grey
+    = t('conversations.conversation.participants')
 
   - for participant in conversation.participants
     = person_image_link(participant, :size => :thumb_small)
@@ -26,5 +28,6 @@
 
       .bd
         = form_for [conversation, Message.new] do |message|
-          = message.text_area :text, :class => 'span12', :rows => 5, :tabindex => 1
-          = message.submit t('.reply').capitalize, 'data-disable-with' => t('.replying'), class: 'btn btn-primary pull-right creation', tabindex: 2
+          = message.text_area :text, :class => 'form-control', :rows => 5, :tabindex => 1
+          .x-small-horizontal-spacer
+          = message.submit t('.reply').capitalize, 'data-disable-with' => t('.replying'), class: 'btn btn-primary btn-sm pull-right creation', tabindex: 2

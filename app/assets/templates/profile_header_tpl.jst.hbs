@@ -1,42 +1,33 @@
-{{#if loggedIn}}
-  <div class="pull-right">
-    {{#if is_own_profile}}
-      {{!-- can't block myself, so don't check it here --}}
-      <a href="{{urlTo 'edit_profile'}}" id="edit_profile" class="btn btn-primary creation">{{t 'people.edit_my_profile'}}</a>
-    {{else}} {{#if is_blocked}}
-      <a href="#" id="unblock_user_button" class="btn btn-danger">{{t 'people.stop_ignoring'}}</a>
-    {{else}}
-      <div class="placeholder aspect_membership_dropdown"></div>
-    {{/if}}{{/if}}
-  </div>
-{{/if}}
-
-<div id="author_info">
-  <h2>
-    <span id="name">{{name}}</span>
-    <span id="diaspora_handle">{{diaspora_id}}</span>
-    {{#if show_profile_btns}}
-      {{{sharingMessage this}}}
-    {{/if}}
-  </h2>
-
-  {{#if loggedIn}}
-    {{#if has_tags}}
-      <div class="description">
-        <i class="entypo tag"></i>
-        {{fmtTags profile.tags}}
-      </div>
-    {{else}}
-      {{#if is_own_profile}}
-        <div class="description">
-          <i>{{t 'profile.you_have_no_tags'}}</i>
-          <span class="add_tags">
-            <a href="{{urlTo 'edit_profile'}}">{{t 'profile.add_some'}}</a>
-          </span>
+<div class="cover image">
+  <div class="top"></div>
+  <ul class="list-unstyled">
+    <li>
+      {{#if loggedIn}}
+        <div class="pull-right">
+          {{#if is_own_profile}}
+            {{!-- can't block myself, so don't check it here --}}
+            <a href="{{urlTo 'edit_profile'}}" id="edit_profile" class="btn btn-default btn-xs creation">
+              <i class="fa fa-pencil"></i> {{t 'people.edit_my_profile'}}
+            </a>
+          {{else}} {{#if is_blocked}}
+            <a href="#" id="unblock_user_button" class="btn btn-danger btn-xs">{{t 'people.stop_ignoring'}}</a>
+          {{else}}
+            <div class="placeholder aspect_membership_dropdown"></div>
+          {{/if}}{{/if}}
         </div>
       {{/if}}
-    {{/if}}
-  {{/if}}
+
+      <div id="author_info">
+        <h3>
+          <i class="fa fa-graduation-cap"></i>&nbsp;<span id="name">{{name}}</span>
+          <!-- <span id="diaspora_handle">{{diaspora_id}}</span> -->
+          {{#if show_profile_btns}}
+            {{{sharingMessage this}}}
+          {{/if}}
+        </h3>
+      </div>
+    </li>
+  </ul>
 </div>
 
 {{#if loggedIn}}

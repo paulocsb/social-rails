@@ -3,8 +3,8 @@
 -#   the COPYRIGHT file.
 
 - if user_signed_in? && @person != current_user.person
-  %h3#aspect_stream_header.stream_title
-    = stream.title
+  / %h3#aspect_stream_header.stream_title
+  /   = stream.title
 
 = render 'publisher/publisher', publisher_aspects_for(stream)
 = render 'aspects/no_posts_message'
@@ -14,7 +14,7 @@
 #main_stream.stream
 
 #paginate
-  %span.loader.hidden
+  %span.loader.hidden.fa.fa-spin.fa-spinner.fa-2x.grey
 
 - if current_user.contacts.size < 2
   = render 'aspects/no_contacts_message'

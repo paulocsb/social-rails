@@ -1,6 +1,10 @@
 #publisher {
   z-index: 1;
   color: $text-grey;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 0 15px;
   
   &.closed {
     #button_container,
@@ -10,9 +14,10 @@
     .options_and_submit {
       display: none !important;
     }
-    
-    #publisher_textarea_wrapper { border: 1px solid $border-grey !important; }
+
   }
+
+  .dropdown-menu { font-size: 12px; }
   
   .mentions-autocomplete-list ul { width: 100% !important; }
   
@@ -20,7 +25,7 @@
     margin: 0;
     #fileInfo { display: none !important; }
     #hide_publisher {
-      margin-top: 10px;
+      // margin-top: 10px;
     }
     
     #publisher_spinner {
@@ -47,8 +52,9 @@
     
     #publisher_textarea_wrapper {
       background-color: white;
-      border-radius: 3px;
-      border: 1px solid $border-dark-grey;
+      border: 1px solid #dddddd;
+      padding: 5px 10px 10px 9px; 
+      margin-bottom: 10px;
 
       input[type='text']#status_message_text {
         border: none;
@@ -69,9 +75,6 @@
       }
       
       .help-block {
-        font-size: 13px;
-        line-height: 30px;
-        padding-left: 10px;
         margin-bottom: 0;
         color: lighten($text-grey,20%);
         a { color: lighten($blue,20%); }

@@ -1,13 +1,13 @@
 {{#if largePhoto}}
   <div class="photo_attachments">
-    <a href="#" class="stream-photo-link">
+    <a href="#" class="stream-photo-link stream-photo-big clearfix">
       {{#with largePhoto}}
         <img src="{{sizes.large}}" class="stream-photo big_stream_photo" data-small-photo="{{sizes.small}}" data-full-photo="{{sizes.large}}" rel="lightbox">
       {{/with}}
     </a>
 
     {{#each smallPhotos}}
-      <a href="#" class="stream-photo-link">
+      <a href="#" class="stream-photo-link stream-photo-small">
         <img src="{{sizes.small}}" class="stream-photo thumb_small" data-small-photo="{{sizes.small}}" data-full-photo="{{sizes.large}}" rel="lightbox">
       </a>
     {{/each}}

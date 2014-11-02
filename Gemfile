@@ -46,7 +46,8 @@ gem 'rack-cors', '0.2.9', :require => 'rack/cors'
 
 # CSS
 
-gem 'bootstrap-sass', '2.3.2.2'
+gem 'bootstrap-sass', '3.2.0.2'
+gem 'bootstrap-will_paginate',  '0.0.10'
 gem 'compass-rails',  '2.0.0'
 gem 'sass-rails',     '4.0.3'
 
@@ -73,6 +74,7 @@ gem 'uuid', '2.3.7'
 # Icons
 
 gem 'entypo-rails', '2.2.2'
+gem "font-awesome-rails"
 
 # JavaScript
 

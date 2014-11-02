@@ -21,7 +21,7 @@
   %br
   %br
 
-.span-5#leftNavBar
+.span-4#leftNavBar
   #home_user_badge
     = owner_image_link
     %h4
@@ -41,7 +41,7 @@
 
 
 
-.span-13.append-1
+.span-13.append-0
   #aspect_stream_container.stream_container
     = render 'aspects/aspect_stream', :stream => @stream
 
@@ -51,8 +51,7 @@
       %h5.stream_title
         = @stream.title
     .content
+    .clearfix
 
   = render 'shared/right_sections'
 
-  %a{:id=>"back-to-top", :title=>"#{t('layouts.application.back_to_top')}", :href=>"#"}
-    &#8679;

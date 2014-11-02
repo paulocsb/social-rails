@@ -22,12 +22,8 @@
             %ul#photodropzone
           .row-fluid#location_container
             = hidden_field :location, :coords
-          .row-fluid#poll_creator_container
-            -# handlebars template
           .row-fluid#button_container
             #publisher-images.pull-right
-              #poll_creator.btn.btn-link{:title => t('shared.publisher.poll.add_a_poll')}
-                %i.entypo.bar-graph
               #file-upload.btn.btn-link{:title => t('shared.publisher.upload_photos')}
                 %i.entypo.camera.publisher_image
               #locator.btn.btn-link{:title => t('shared.publisher.get_location')}
@@ -49,32 +45,30 @@
         = image_tag 'ajax-loader.gif'
       .row-fluid.options_and_submit
         .public_toggle
-          .btn.btn-default.pull-left#hide_publisher{:title => t('shared.publisher.discard_post')}
+          .btn.btn-default.btn-sm.pull-left#hide_publisher{:title => t('shared.publisher.discard_post')}
             %span.text
               =t('cancel')
 
           .btn-toolbar.pull-right
-            %span#publisher_service_icons
-              - if current_user.services
-                - for service in current_user.services
-                  = service_button(service)
-              %a.btn.btn-link{ :href => "#question_mark_pane", :class => 'question_mark', :rel => 'facebox', :title => t('shared.public_explain.manage') }
-                %i.entypo.small.cog
 
             = render :partial => "publisher/aspect_dropdown", :locals => { :selected_aspects => selected_aspects } 
 
-            %button{ :disabled => ("disabled" if publisher_hidden_text.blank?), :class => 'btn btn-default post_preview_button'}
+            %button{ :disabled => ("disabled" if publisher_hidden_text.blank?), :class => 'btn btn-default btn-sm post_preview_button'}
               %span.text
                 = t('shared.publisher.preview')
 
-            %button#submit.btn.btn-primary.creation{ :disabled => ("disabled" if publisher_hidden_text.blank?), :tabindex => 2}
+            %button#submit.btn.btn-primary.btn-sm.creation{ :disabled => ("disabled" if publisher_hidden_text.blank?), :tabindex => 2}
               %span.text
                 = t('shared.publisher.share')
 
           .facebox_content
             #question_mark_pane
               = render 'shared/public_explain'
+
+        .clearfix
+
     = link_to '', contacts_path(:aspect_ids => aspect_ids), :class => 'selected_contacts_link hidden'
 
-
     #publisher_photo_upload
+
+.clearfix

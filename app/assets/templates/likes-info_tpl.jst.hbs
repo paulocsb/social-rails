@@ -1,7 +1,7 @@
 {{#if likesCount}}
   <div class="comment">
     <div class="media">
-      <i class="entypo heart"></i>
+      <i class="fa fa-heart-o color-red-light"></i>
 
       <div class="bd">
         {{#unless likes_fetched}}
@@ -14,7 +14,7 @@
           {{#each likes}}
             {{#with author}}
               <a href="/people/{{guid}}" class="{{hovercardable this}}">
-                <img src="{{avatar.small}}" class="avatar micro" title="{{name}}"/>
+                <img src="{{avatar.small}}" class="avatar micro img-circle" title="{{name}}"/>
               </a>
             {{/with}}
           {{/each}}

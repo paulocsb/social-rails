@@ -150,8 +150,10 @@ jQuery.fn.center = (function() {
     };
 
     this.scrollToThumbnail = function(imageThumb) {
-      self.navigation.animate({scrollLeft: (self.navigation.scrollLeft()
-         + imageThumb.offset().left +35 - (self.window.width() / 2))}, 200, 'swing');
+      if(imageThumb.length > 0){
+        self.navigation.animate({scrollLeft: (self.navigation.scrollLeft()
+          + imageThumb.offset().left +35 - (self.window.width() / 2))}, 200, 'swing');
+      }
     }
 
     this.selectImage = function(imageThumb) {

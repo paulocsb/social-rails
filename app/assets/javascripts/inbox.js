@@ -19,13 +19,15 @@ $(document).ready(function(){
       conv.removeClass('unread');
     }
     if(cBadge.html() !== null) {
-      cBadge.html().replace(/\d+/, function(num){
-        num = parseInt(num);
-        cBadge.html(parseInt(num)-1);
-        if(num == 1) {
-          cBadge.addClass("hidden");
-        }
-      });
+      if(cBadge.length > 0) {
+        cBadge.html().replace(/\d+/, function(num){
+          num = parseInt(num);
+          cBadge.html(parseInt(num)-1);
+          if(num == 1) {
+            cBadge.addClass("hidden");
+          }
+        });
+      }
     }
 
     return false;

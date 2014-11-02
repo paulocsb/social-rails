@@ -10,93 +10,93 @@ $button-border-color: #aaa;
   left: -11px
 }
 
-.button {
-  @include border-radius(3px);
-  @include button-gradient($light-grey);
-  @include box-shadow(0,1px,1px,#cfcfcf);
-  @include transition(border);
+// .button {
+//   @include border-radius(3px);
+//   @include button-gradient($light-grey);
+//   @include box-shadow(0,1px,1px,#cfcfcf);
+//   @include transition(border);
 
-  display: inline;
+//   display: inline;
 
-  font: {
-    style: normal;
-    size: 12px;
-  }
-  color: #505050;
+//   font: {
+//     style: normal;
+//     size: 12px;
+//   }
+//   color: #505050;
 
-  padding: 4px 9px;
+//   padding: 4px 9px;
 
-  min-width: 90px;
-  min-height: 10px;
+//   min-width: 90px;
+//   min-height: 10px;
 
-  border: 1px solid $button-border-color;
+//   border: 1px solid $button-border-color;
 
-  cursor: pointer;
-  white-space: nowrap;
+//   cursor: pointer;
+//   white-space: nowrap;
 
-  &:hover {
-    @include button-gradient-hover-no-saturation($light-grey);
-    color: #505050;
-    text-decoration: none;
-    border: 1px solid darken($button-border-color,15%);
-  }
+//   &:hover {
+//     @include button-gradient-hover-no-saturation($light-grey);
+//     color: #505050;
+//     text-decoration: none;
+//     border: 1px solid darken($button-border-color,15%);
+//   }
 
-  &:active {
-    @include linear-gradient(#acacac,#808080);
-  }
+//   &:active {
+//     @include linear-gradient(#acacac,#808080);
+//   }
 
-  img {
-    position: relative;
-    height: 20px;
-    width: 20px;
-    top: 6px;
-  }
-}
+//   img {
+//     position: relative;
+//     height: 20px;
+//     width: 20px;
+//     top: 6px;
+//   }
+// }
 
-/* fix for input height */
-input.button {
-  padding: 3px 9px {
-    bottom: 4px
-  }
-}
+// fix for input height
+// input.button {
+//   padding: 3px 9px {
+//     bottom: 4px
+//   }
+// }
 
-.button .selected {
-  @include linear-gradient(#f0f0f0,$highlight-white,29%,85%);
+// .button .selected {
+//   @include linear-gradient(#f0f0f0,$highlight-white,29%,85%);
 
-  border-top: 1px solid #aaa;
-}
+//   border-top: 1px solid #aaa;
+// }
 
-.button {
-  &.delete {
-    color: desaturate($red,10%);
-  }
+// .button {
+//   &.delete {
+//     color: desaturate($red,10%);
+//   }
 
-  &.in_aspects {
-    @include button-gradient($green);
-    &:hover {
-      @include button-gradient-hover($green);
-    }
-  }
+//   &.in_aspects {
+//     @include button-gradient($green);
+//     &:hover {
+//       @include button-gradient-hover($green);
+//     }
+//   }
 
-  &.creation {
-    @include button-gradient($creation-blue);
-    color: #fff;
+//   &.creation {
+//     @include button-gradient($creation-blue);
+//     color: #fff;
 
-    border: 1px solid darken($button-border-color,20%);
+//     border: 1px solid darken($button-border-color,20%);
 
-    &:hover {
-      @include button-gradient-hover($creation-blue);
-      border: 1px solid darken($button-border-color,35%);
-    }
-  }
+//     &:hover {
+//       @include button-gradient-hover($creation-blue);
+//       border: 1px solid darken($button-border-color,35%);
+//     }
+//   }
 
-  &.red_on_hover {
-    &:hover {
-      @include button-gradient(#F74427);
-      color: #222;
-    }
-  }
-}
+//   &.red_on_hover {
+//     &:hover {
+//       @include button-gradient(#F74427);
+//       color: #222;
+//     }
+//   }
+// }
 
 .right {
   position: absolute;

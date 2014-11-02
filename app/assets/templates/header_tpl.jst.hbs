@@ -1,45 +1,128 @@
 <div class="container" style="position:relative;">
 
   <a href="/stream">
-    <div alt="Logo_small" class="diaspora_header_logo branding-header-logo">
+    <div alt="Accademicos" class="accademicos_header_logo">
     </div>
   </a>
 
-  <span class="header-nav">
-    <span>
-        <a href="/stream">
-          {{t "my_stream"}}
-        </a>
-    </span>
+  <ul class="nav navbar-nav">
+    <li>
+      <a href="/stream">
+        {{t "my_stream"}}
+      </a>
+    </li>
+    <li>
+      <a href="/activity">
+        {{t "my_activity"}}
+      </a>
+    </li>
+  </ul>
 
-    <span>
-        <a href="/activity">
-          {{t "my_activity"}}
-        </a>
-     </span>
-  </span>
-
-  <div id="nav_badges">
-    <div class="badge badge-inverse" id="notification_badge">
-      <div class="icons-notifications_grey" >
-        <a href="/notifications" title="{{t "header.notifications"}}" class="badge_link" >
-          <div class="badge_count {{#unless current_user.notifications_count}} hidden {{/unless}}">
+  <ul class="nav navbar-nav">
+    <li class="dropdown">
+      <a class="dropdown-toggle count-info" data-toggle="dropdown" href="/notifications" title="{{t "header.notifications"}}">
+        <i class="fa fa-bell"></i>&nbsp;
+          <span id="notification_badge" class="label label-danger badge_count {{#unless current_user.notifications_count}} hidden {{/unless}}">
             {{current_user.notifications_count}}
+          </span>
+      </a>
+      <ul class="dropdown-menu dropdown-alerts" id="notification_dropdown">
+        <li>
+          <div class="pull-right">
+            <a href="#" id="mark_all_read_link" class="{{#unless current_user.notifications_count}}disabled{{/unless}}">
+              {{t "header.mark_all_as_read"}}
+            </a>
           </div>
-        </a>
-      </div>
-    </div>
-
-    <div class="badge badge-inverse" id="conversations_badge">
-     <div class="icons-mail_grey" >
-        <a href="/conversations" title="{{t "header.conversations"}}" class="badge_link" >
-          <div class="badge_count {{#unless current_user.unread_messages_count}} hidden {{/unless}}">
-            {{current_user.unread_messages_count}}
+          <h4>
+            {{t "header.recent_notifications"}}
+          </h4>
+        </li>
+        <li>
+          <div class="notifications">
+            <div class="ajax_loader center">
+              <i class="fa fa-spin fa-spinner fa-2x grey"></i>
+            </div>
           </div>
-        </a>
-      </div>
-    </div>
+          <div class="view_all center">
+            <a href="/notifications" id="view_all_notifications">
+              {{t "header.view_all"}}
+            </a>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a class="count-info" href="/conversations" title="{{t "header.conversations"}}">
+        <i class="fa fa-envelope"></i>&nbsp;
+        <span id="conversations_badge" class="label label-danger badge_count {{#unless current_user.unread_messages_count}} hidden {{/unless}}">
+          {{current_user.unread_messages_count}}
+        </span>
+      </a>
+    </li>
+  </ul>
 
+  <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <span class="pull-left innerR">
+          <img alt="{{current_user.name}}" class="img-circle profile" src="{{current_user.avatar.small}}" title="{{current_user.name}}" />
+        </span>
+        <span><strong>{{current_user.name}}</strong></span>
+        <b class="caret"></b>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/people/{{current_user.guid}}">{{t "header.profile"}}</a></li>
+        <li><a href="/contacts">{{t "header.contacts"}}</a></li>
+        <li><a href="/user/edit">{{t "header.settings"}}</a></li>
+        <li><a href="/help">{{t "header.help"}}</a></li>
+        {{#if current_user.admin}}
+        <li><a href="/admins/user_search">{{t "header.admin"}}</a></li>
+        {{/if}}
+        <li><a href="/users/sign_out" data-method="delete">{{t "header.log_out"}}</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <!-- <ul class="nav navbar-nav">
+    <li class="dropdown">
+      <a class="dropdown-toggle count-info" data-toggle="dropdown" href="/conversations" title="{{t "header.conversations"}}">
+        <i class="fa fa-envelope"></i>&nbsp;
+        <span class="label label-danger {{#unless current_user.unread_messages_count}} hidden {{/unless}}">
+          {{current_user.unread_messages_count}}
+        </span>
+      </a>
+      <ul class="dropdown-menu dropdown-alerts">
+        <li>
+          <div class="view_all">
+            <a href="/conversations" id="view_all_messages">
+              {{t "header.view_all"}}
+            </a>
+          </div>
+        </li>
+      </ul>
+    </li>
+  </ul> -->
+
+  <!-- <div id="nav_badges">
+      <div class="badge badge-inverse" id="notification_badge">
+        <div class="icons-notifications_grey" >
+          <a href="/notifications" title="{{t "header.notifications"}}" class="badge_link" >
+            <div class="badge_count {{#unless current_user.notifications_count}} hidden {{/unless}}">
+              {{current_user.notifications_count}}
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="badge badge-inverse" id="conversations_badge">
+       <div class="icons-mail_grey" >
+          <a href="/conversations" title="{{t "header.conversations"}}" class="badge_link" >
+            <div class="badge_count {{#unless current_user.unread_messages_count}} hidden {{/unless}}">
+              {{current_user.unread_messages_count}}
+            </div>
+          </a>
+        </div>
+      </div>
 
       <div id="notification_dropdown">
         <div class="header">
@@ -65,32 +148,21 @@
           </a>
         </div>
       </div>
-  </div>
-
-  <ul class="dropdown" id="user_menu">
-    <li class="user-menu-trigger">
-      <div class="user-menu-more-indicator">
-        ▼
-      </div>
-      <img alt="{{current_user.name}}" class="user-menu-avatar" src="{{current_user.avatar.small}}" title="{{current_user.name}}" />
-      <a class="user-name" href="#">{{current_user.name}}</a>
-    </li>
-    <li class="user-menu-item"><a href="/people/{{current_user.guid}}">{{t "header.profile"}}</a></li>
-    <li class="user-menu-item"><a href="/contacts">{{t "header.contacts"}}</a></li>
-    <li class="user-menu-item"><a href="/user/edit">{{t "header.settings"}}</a></li>
-    <li class="user-menu-item"><a href="/help">{{t "header.help"}}</a></li>
-    {{#if current_user.admin}}
-      <li class="user-menu-item"><a href="/admins/user_search">{{t "header.admin"}}</a></li>
-    {{/if}}
-    <li class="user-menu-item"><a href="/users/sign_out" data-method="delete">{{t "header.log_out"}}</a></li>
-  </ul>
+  </div> -->
 
 
-  <div id="global_search">
+  <!-- <div id="global_search">
     <form accept-charset="UTF-8" action="/search" class="search_form" method="get">
       <input name="utf8" type="hidden" value="✓">
       <input id="q" name="q" placeholder="{{t "header.search"}}" results="5" type="search" autocomplete="off" class="ac_input">
     </form>
+  </div> -->
+
+  <div id="global_search">
+  <form accept-charset="UTF-8" action="/search" class="search_form navbar-form navbar-left" method="get">
+      <input name="utf8" type="hidden" value="✓" />
+      <input id="q" name="q" placeholder="{{t "header.search"}}" results="5" type="search" autocomplete="off" class="ac_input form-control header-search" />
+  </form>
   </div>
 
   <div id="lightbox">
