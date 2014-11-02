@@ -146,6 +146,9 @@ gem 'rails-timeago',           '2.11.0'
 # https://github.com/rubyzip/rubyzip#important-note
 gem 'zip-zip'
 
+# Rails 12factor - Need for Heroku
+
+gem 'rails_12factor'
 
 # Windows and OSX have an execjs compatible runtime built-in, Linux users should
 # install Node.js or use 'therubyracer'.
@@ -182,10 +185,6 @@ group :production do # we don't install these on travis to speed up test runs
 
   gem 'asset_sync', '1.1.0', :require => false
 
-  # Rails 12factor - Need for Heroku
-
-  gem 'rails_12factor'
-  
 end
 
 group :development do
