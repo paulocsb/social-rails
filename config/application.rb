@@ -70,7 +70,8 @@ module Diaspora
 
       blueprint.css
       bootstrap.css
-
+      bootstrap-complete.css
+      bootstrap-responsive.css
       default.css
       error_pages.css
       admin.css
@@ -78,9 +79,6 @@ module Diaspora
       new-templates.css
       rtl.css
     }
-
-      # bootstrap-complete.css
-      # bootstrap-responsive.css
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
