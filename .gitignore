@@ -5,7 +5,7 @@ app/assets/images/custom/
 
 
 # Configuration files
-#config/diaspora.yml
+config/diaspora.yml
 config/heroku.yml
 config/initializers/secret_token.rb
 config/redis.conf
