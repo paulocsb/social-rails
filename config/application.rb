@@ -71,14 +71,19 @@ module Diaspora
       blueprint.css
       bootstrap.css
       bootstrap-complete.css
-      bootstrap-responsive.css
+      
       default.css
       error_pages.css
       admin.css
       mobile/mobile.css
       new-templates.css
       rtl.css
+
+      bootstrap-select.js
+      fontawesome.js
     }
+
+    # bootstrap-responsive.css
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
