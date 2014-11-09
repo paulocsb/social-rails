@@ -18,48 +18,52 @@
     </li>
   </ul>
 
-  <ul class="nav navbar-nav">
-    <li class="dropdown">
-      <a class="dropdown-toggle count-info" data-toggle="dropdown" href="/notifications" title="{{t "header.notifications"}}">
-        <i class="fa fa-bell"></i>&nbsp;
-          <span id="notification_badge" class="label label-danger badge_count {{#unless current_user.notifications_count}} hidden {{/unless}}">
-            {{current_user.notifications_count}}
-          </span>
-      </a>
-      <ul class="dropdown-menu dropdown-alerts" id="notification_dropdown">
-        <li>
-          <div class="pull-right">
-            <a href="#" id="mark_all_read_link" class="{{#unless current_user.notifications_count}}disabled{{/unless}}">
-              {{t "header.mark_all_as_read"}}
-            </a>
-          </div>
-          <h4>
-            {{t "header.recent_notifications"}}
-          </h4>
-        </li>
-        <li>
-          <div class="notifications">
-            <div class="ajax_loader center">
-              <i class="fa fa-spin fa-spinner fa-2x grey"></i>
+  <div id="nav_badges">
+    <ul class="nav navbar-nav">
+      <li class="dropdown">
+        <a id="notification_badge" class="dropdown-toggle count-info" data-toggle="dropdown" href="/notifications" title="{{t "header.notifications"}}">
+          <i class="fa fa-bell"></i>&nbsp;
+            <span class="label label-danger badge_count {{#unless current_user.notifications_count}} hidden {{/unless}}">
+              {{current_user.notifications_count}}
+            </span>
+        </a>
+        <ul class="dropdown-menu dropdown-alerts" id="notification_dropdown">
+          <li>
+            <div class="pull-right">
+              <a href="#" id="mark_all_read_link" class="{{#unless current_user.notifications_count}}disabled{{/unless}}">
+                {{t "header.mark_all_as_read"}}
+              </a>
             </div>
-          </div>
-          <div class="view_all center">
-            <a href="/notifications" id="view_all_notifications">
-              {{t "header.view_all"}}
-            </a>
-          </div>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a class="count-info" href="/conversations" title="{{t "header.conversations"}}">
-        <i class="fa fa-envelope"></i>&nbsp;
-        <span id="conversations_badge" class="label label-danger badge_count {{#unless current_user.unread_messages_count}} hidden {{/unless}}">
-          {{current_user.unread_messages_count}}
-        </span>
-      </a>
-    </li>
-  </ul>
+            <h4>
+              {{t "header.recent_notifications"}}
+            </h4>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <div class="notifications">
+              <div class="ajax_loader center">
+                <i class="fa fa-spin fa-spinner fa-2x grey"></i>
+              </div>
+            </div>
+            <li class="divider"></li>
+            <div class="view_all center">
+              <a href="/notifications" id="view_all_notifications">
+                {{t "header.view_all"}} <i class="fa fa-angle-right"></i>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a id="conversations_badge" class="count-info" href="/conversations" title="{{t "header.conversations"}}">
+          <i class="fa fa-envelope"></i>&nbsp;
+          <span class="label label-danger badge_count {{#unless current_user.unread_messages_count}} hidden {{/unless}}">
+            {{current_user.unread_messages_count}}
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
 
   <ul class="nav navbar-nav navbar-right">
     <li class="dropdown">
@@ -82,81 +86,6 @@
       </ul>
     </li>
   </ul>
-
-  <!-- <ul class="nav navbar-nav">
-    <li class="dropdown">
-      <a class="dropdown-toggle count-info" data-toggle="dropdown" href="/conversations" title="{{t "header.conversations"}}">
-        <i class="fa fa-envelope"></i>&nbsp;
-        <span class="label label-danger {{#unless current_user.unread_messages_count}} hidden {{/unless}}">
-          {{current_user.unread_messages_count}}
-        </span>
-      </a>
-      <ul class="dropdown-menu dropdown-alerts">
-        <li>
-          <div class="view_all">
-            <a href="/conversations" id="view_all_messages">
-              {{t "header.view_all"}}
-            </a>
-          </div>
-        </li>
-      </ul>
-    </li>
-  </ul> -->
-
-  <!-- <div id="nav_badges">
-      <div class="badge badge-inverse" id="notification_badge">
-        <div class="icons-notifications_grey" >
-          <a href="/notifications" title="{{t "header.notifications"}}" class="badge_link" >
-            <div class="badge_count {{#unless current_user.notifications_count}} hidden {{/unless}}">
-              {{current_user.notifications_count}}
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="badge badge-inverse" id="conversations_badge">
-       <div class="icons-mail_grey" >
-          <a href="/conversations" title="{{t "header.conversations"}}" class="badge_link" >
-            <div class="badge_count {{#unless current_user.unread_messages_count}} hidden {{/unless}}">
-              {{current_user.unread_messages_count}}
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div id="notification_dropdown">
-        <div class="header">
-          <div class="pull-right">
-            <a href="#" id="mark_all_read_link" class="{{#unless current_user.notifications_count}}disabled{{/unless}}">
-              {{t "header.mark_all_as_read"}}
-            </a>
-          </div>
-
-          <h4>
-            {{t "header.recent_notifications"}}
-          </h4>
-        </div>
-
-        <div class="notifications">
-          <div class="ajax_loader">
-            <img alt="Ajax-loader" src="{{imageUrl "ajax-loader.gif"}}">
-          </div>
-        </div>
-        <div class="view_all">
-          <a href="/notifications" id="view_all_notifications">
-            {{t "header.view_all"}}
-          </a>
-        </div>
-      </div>
-  </div> -->
-
-
-  <!-- <div id="global_search">
-    <form accept-charset="UTF-8" action="/search" class="search_form" method="get">
-      <input name="utf8" type="hidden" value="✓">
-      <input id="q" name="q" placeholder="{{t "header.search"}}" results="5" type="search" autocomplete="off" class="ac_input">
-    </form>
-  </div> -->
 
   <div id="global_search">
   <form accept-charset="UTF-8" action="/search" class="search_form navbar-form navbar-left" method="get">

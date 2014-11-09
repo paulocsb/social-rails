@@ -1,5 +1,5 @@
 .timeago {
-  color: $text-grey;
+  color: $link-grey;
   border-bottom: none;
 }
 
@@ -75,11 +75,60 @@ body > header {
     .right { top: 10px; }
   }
 
+  #notification_dropdown {
+    #mark_all_read_link {
+      font-size: 12px;
+      &:hover { text-decoration: none; }
+    }
+  }
+
+  .notifications {
+    font-size: 12px;
+
+    img.img-circle {
+      margin: 3px 20px 20px;
+      float: left;
+      height: 35px;
+      width: 35px;
+    }
+
+    .notification_element {
+      padding: 8px 8px 8px 0;
+
+      &.unread {
+        background: transparent !important;
+        border-left: 3px solid $red-light;
+        color: $black;
+        .unread-toggle {
+          .entypo { color: $black; cursor: pointer; }
+        }
+      }
+
+      &.read {
+        .unread-toggle {
+          .entypo { color: $grey-light; cursor: pointer; }
+        }
+      }
+    }
+
+    .notification_message {
+      a {
+        color: $blue;
+        font-weight: bold;
+      }
+    }
+
+    .timeago {
+      color: $link-grey;
+    }
+  }
+
+
   #nav_badges {
-    display: inline-block;
-    margin-top: 2px;
-    float: left;
-    width: 61px;
+    // display: inline-block;
+    // margin-top: 2px;
+    // float: left;
+    // width: 61px;
 
     // a:hover { text-decoration: none; }
 
@@ -142,103 +191,103 @@ body > header {
     //   padding-bottom: 12px;
     // }
 
-    #notification_dropdown {
-      @include dropdown-shadow;
+    // #notification_dropdown {
+    //   @include dropdown-shadow;
 
-      background: white;
-      border: solid $border-dark-grey 1px;
-      left: 300px;
-      width: 380px;
-      display: none;
-      float: left;
-      color: $grey;
+    //   background: white;
+    //   border: solid $border-dark-grey 1px;
+    //   left: 300px;
+    //   width: 380px;
+    //   display: none;
+    //   float: left;
+    //   color: $grey;
 
-      a { color: $blue; }
-      a.disabled {
-        color: $link-disabled-grey;
-        cursor: default;
-      }
+    //   a { color: $blue; }
+    //   a.disabled {
+    //     color: $link-disabled-grey;
+    //     cursor: default;
+    //   }
 
-      .header {
-        border-bottom: 1px solid $border-grey;
-        padding: 5px 10px 5px 5px;
+    //   .header {
+    //     border-bottom: 1px solid $border-grey;
+    //     padding: 5px 10px 5px 5px;
 
-        h4 {
-          padding-bottom: 0;
-          margin-bottom: 0;
-          font-size: 16px;
-          color: $black;
-        }
+    //     h4 {
+    //       padding-bottom: 0;
+    //       margin-bottom: 0;
+    //       font-size: 16px;
+    //       color: $black;
+    //     }
 
-        a {
-          font-size: 11px;
-          font-weight: bold;
-        }
-      }
+    //     a {
+    //       font-size: 11px;
+    //       font-weight: bold;
+    //     }
+    //   }
 
-      .ajax_loader {
-        text-align: center;
-        padding: 15px;
-      }
-      .notifications{
-        overflow: hidden;
-        position: relative;
-        max-height: 325px;
-        padding: 10px;
-      }
+    //   .ajax_loader {
+    //     text-align: center;
+    //     padding: 15px;
+    //   }
+    //   .notifications{
+    //     overflow: hidden;
+    //     position: relative;
+    //     max-height: 325px;
+    //     padding: 10px;
+    //   }
 
-      .notification_element {
-        border-bottom: 1px solid $border-grey;
-        padding: 5px;
-        min-height: 35px;
-        line-height: 18px;
+    //   .notification_element {
+    //     border-bottom: 1px solid $border-grey;
+    //     padding: 5px;
+    //     min-height: 35px;
+    //     line-height: 18px;
 
-        > .avatar {
-          height: 35px;
-          width: 35px;
-          float: left;
-        }
+    //     > .avatar {
+    //       height: 35px;
+    //       width: 35px;
+    //       float: left;
+    //     }
 
-        .notification_message {
-          margin-left: 40px;
-        }
+    //     .notification_message {
+    //       margin-left: 40px;
+    //     }
 
-        .unread-toggle {
-          padding: 9px 9px;
-          position: relative;
-          .entypo {
-            cursor: pointer;
-            color: lighten($black,75%);
-            font-size: 17px;
-            line-height: 17px;
-          }
-          .tooltip {
-            position: fixed;
-          }
-        }
+    //     .unread-toggle {
+    //       padding: 9px 9px;
+    //       position: relative;
+    //       .entypo {
+    //         cursor: pointer;
+    //         color: lighten($black,75%);
+    //         font-size: 17px;
+    //         line-height: 17px;
+    //       }
+    //       .tooltip {
+    //         position: fixed;
+    //       }
+    //     }
 
-        &.unread {
-          background-color: $background-grey;
-          color: $black;
-          .unread-toggle {
-            .entypo { color: $black; }
-          }
-        }
-      }
+    //     &.unread {
+    //       background-color: $background-grey;
+    //       color: $black;
+    //       .unread-toggle {
+    //         .entypo { color: $black; }
+    //       }
+    //     }
+    //   }
 
-      .view_all {
-        background-color: $blue;
-        border-bottom: 1px solid $border-dark-grey;
-        text-align: center;
-        a {
-          display: block;
-          padding: 5px;
-          color: white;
-          font-size: 12px;
-          font-weight: bold;
-        }
-      }
-    }
+    //   .view_all {
+    //     background-color: $blue;
+    //     border-bottom: 1px solid $border-dark-grey;
+    //     text-align: center;
+    //     a {
+    //       display: block;
+    //       padding: 5px;
+    //       color: white;
+    //       font-size: 12px;
+    //       font-weight: bold;
+    //     }
+    //   }
+    // }
   }
 
   // #global_search {
