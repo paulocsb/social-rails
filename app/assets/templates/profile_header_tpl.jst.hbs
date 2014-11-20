@@ -6,7 +6,7 @@
         <div class="pull-right">
           {{#if is_own_profile}}
             {{!-- can't block myself, so don't check it here --}}
-            <a href="{{urlTo 'edit_profile'}}" id="edit_profile" class="btn btn-default btn-xs creation">
+            <a href="{{urlTo 'edit_profile'}}" id="edit_profile" class="btn btn-info btn-sm creation">
               <i class="fa fa-pencil"></i> {{t 'people.edit_my_profile'}}
             </a>
           {{else}} {{#if is_blocked}}
@@ -20,7 +20,6 @@
       <div id="author_info">
         <h3>
           <i class="fa fa-graduation-cap"></i>&nbsp;<span id="name">{{name}}</span>
-          <!-- <span id="diaspora_handle">{{diaspora_id}}</span> -->
           {{#if show_profile_btns}}
             {{{sharingMessage this}}}
           {{/if}}
@@ -64,15 +63,6 @@
           {{t 'profile.posts'}}
         </a>
       </li>
-      {{#if show_photos}}
-        <li {{#isCurrentPage 'person_photos' guid}} class="active" {{/isCurrentPage}}>
-          <a href="{{urlTo 'person_photos' guid}}" id="photos_link">
-            <i class="entypo picture"></i>
-            {{t 'profile.photos'}}
-            <div class="badge badge-default">{{photos.count}}</div>
-          </a>
-        </li>
-      {{/if}}
       {{#if show_contacts}}
         <li {{#isCurrentPage 'person_contacts' guid}} class="active" {{/isCurrentPage}}>
           {{#if is_own_profile}}

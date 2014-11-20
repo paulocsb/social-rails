@@ -32,7 +32,7 @@
               = conversation.messages.last.text
         .timestamp.pull-right
           = timeago(conversation.updated_at)
-        / - if other_participants.count > 1
-        /   .participants
-        /     - other_participants.drop(1).take(15).each do |participant|
-        /       = person_image_tag(participant)
+        -#/ - if other_participants.count > 1
+        -#/   .participants
+        -#/     - other_participants.drop(1).take(15).each do |participant|
+        -#/       = person_image_tag(participant)

@@ -24,8 +24,8 @@
             = hidden_field :location, :coords
           .row-fluid#button_container
             #publisher-images.pull-right
-              #file-upload.btn.btn-link{:title => t('shared.publisher.upload_photos')}
-                %i.entypo.camera.publisher_image
+              -##file-upload.btn.btn-link{:title => t('shared.publisher.upload_photos')}
+              -#  %i.entypo.camera.publisher_image
               #locator.btn.btn-link{:title => t('shared.publisher.get_location')}
                 %i.entypo.location.publisher_image
               #hide_location.btn.btn-link{:title => t('shared.publisher.remove_location')}

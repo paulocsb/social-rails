@@ -19,7 +19,7 @@
     display: block;
     margin-right: 6px;
     padding: 4px;
-    &:hover { background-color: $background-blue; }
+    &:hover { background-color: transparent !important; }
 
     .label {
       background-color: $background-grey;

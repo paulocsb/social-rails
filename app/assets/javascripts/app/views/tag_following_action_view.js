@@ -41,12 +41,12 @@ app.views.TagFollowingAction = app.views.Base.extend({
   },
 
   mouseIn : function(){
-    this.$("input").removeClass("green").addClass("btn-danger");
+    this.$("input").removeClass("info").addClass("btn-danger");
     this.$("input").val( Diaspora.I18n.t('stream.tags.stop_following', {tag: this.model.attributes.name} ) );
   },
 
   mouseOut : function() {
-    this.$("input").removeClass("btn-danger").addClass("green");
+    this.$("input").removeClass("btn-danger").addClass("info");
     this.$("input").val( Diaspora.I18n.t('stream.tags.following', {"tag" : this.model.attributes.name} ) );
   },
 

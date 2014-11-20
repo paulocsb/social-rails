@@ -422,6 +422,13 @@ input {
 .clearfix, .container {display:block;}
 .clear {clear:both;}
 
+.options_and_submit {
+  .btn-toolbar {
+    width: 330px; 
+    text-align: right;
+  }
+}
+
 /* responsive */
 @media (max-width: 767px) {
   body {

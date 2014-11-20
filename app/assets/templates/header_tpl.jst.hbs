@@ -5,21 +5,8 @@
     </div>
   </a>
 
-  <ul class="nav navbar-nav">
-    <li>
-      <a href="/stream">
-        {{t "my_stream"}}
-      </a>
-    </li>
-    <li>
-      <a href="/activity">
-        {{t "my_activity"}}
-      </a>
-    </li>
-  </ul>
-
   <div id="nav_badges">
-    <ul class="nav navbar-nav">
+    <ul class="nav navbar-nav" style="margin-left: 125px;">
       <li class="dropdown">
         <a id="notification_badge" class="dropdown-toggle count-info" data-toggle="dropdown" href="/notifications" title="{{t "header.notifications"}}">
           <i class="fa fa-bell"></i>&nbsp;
@@ -88,10 +75,10 @@
   </ul>
 
   <div id="global_search">
-  <form accept-charset="UTF-8" action="/search" class="search_form navbar-form navbar-left" method="get">
-      <input name="utf8" type="hidden" value="✓" />
-      <input id="q" name="q" placeholder="{{t "header.search"}}" results="5" type="search" autocomplete="off" class="ac_input form-control header-search" />
-  </form>
+    <form accept-charset="UTF-8" action="/search" class="search_form navbar-form navbar-left" method="get">
+        <input name="utf8" type="hidden" value="✓" />
+        <input id="q" name="q" placeholder="{{t "header.search"}}" results="5" type="search" autocomplete="off" class="ac_input form-control header-search" />
+    </form>
   </div>
 
   <div id="lightbox">

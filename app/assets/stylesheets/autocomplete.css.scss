@@ -1,18 +1,10 @@
 .ac_results {
-  border: 1px solid #999;
+  border: 1px solid #DDD;
   background-color: transparent;
   overflow: hidden;
   z-index: 99999;
-  min-width: 247px !important;
+  min-width: 270px !important;
   width: 100%;
-
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-
-  -webkit-box-shadow: 0 1px 3px #999;
-  -moz-box-shadow: 0 1px 3px #999;
-  box-shadow: 0 1px 3px #999;
 }
 
 .ac_results ul {
@@ -29,9 +21,9 @@
     left: 50px;
     top: 6px;
   }
-  cursor: default;
+  cursor: pointer !important;
   display: block;
-  height: 37px;
+  height: 45px;
   position: relative;
   // if width will be 100% horizontal scrollbar will apear
   // when scroll mode will be used
@@ -51,6 +43,9 @@
 .ac_odd {
   background-color: #fafafa;
   background-color: rgba(250,250,250,0.95);
+  height: 30px !important; 
+  padding-top: 10px !important; 
+  border-top: 1px solid #DDD !important;
 }
 
 .ac_even {
@@ -59,7 +54,7 @@
 }
 
 .ac_over {
-  background-color: #3F8FBA;
+  background-color: #428bca !important;
   color: white;
 }
 

@@ -136,6 +136,6 @@ app.views.AspectMembership = app.views.AspectsDropdown.extend({
   // refresh the button text to reflect the current aspect selection status
   updateSummary: function(target) {
     this._toggleCheckbox(target);
-    this._updateButton('green');
+    this._updateButton('info');
   },
 });

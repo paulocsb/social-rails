@@ -10,41 +10,40 @@
 
 .container-fluid#people_search
   .row-fluid
-    .page-header
-      = search_header
-  .row-fluid
-    .span8
-      #people_stream.stream
-        - if @hashes.empty?
-          - if @background_query.present?
+    .container
+      .page-header
+        = search_header
 
-            / TODO this is gross, and should be extracted!
-            :javascript
-              $(document).ready( function() {
-                List.startSearchDelay('#{@background_query}')
-              } );
+      .col-md-8.col-md-8-left
+        #people_stream.container-box.stream
+          - if @hashes.empty?
+            - if @background_query.present?
 
-            %p
-              = t('.searching')
-              = image_tag('static-loader.png', :class => 'loader')
+              / TODO this is gross, and should be extracted!
+              :javascript
+                $(document).ready( function() {
+                  List.startSearchDelay('#{@background_query}')
+                } );
+
+              %p
+                = t('.searching')
+                = image_tag('static-loader.png', :class => 'loader')
+            - else
+              %p
+                = t('.no_one_found')
           - else
+            - for hash in @hashes
+              = render :partial => 'people/person', :locals => hash
+
+            = will_paginate(@people)
+
+      .col-md-4
+        .container-box
+          - if AppConfig.settings.invitations.open?
+            %h4
+              = t('.couldnt_find_them')
             %p
-              = t('.no_one_found')
-        - else
-          - for hash in @hashes
-            = render :partial => 'people/person', :locals => hash
-
-          = will_paginate(@people)
-
-        %a{:id=>"back-to-top", :title=>"#{t('layouts.application.back_to_top')}", :href=>"#"}
-          &#8679;
-
-    .span4
-      - if AppConfig.settings.invitations.open?
-        %h4
-          = t('.couldnt_find_them')
-        %p
-          = t('.search_handle')
-        %h4
-          = t('.send_invite')
-        = render "shared/invitations"
+              = t('.search_handle')
+            %h4
+              = t('.send_invite')
+          = render "shared/invitations"

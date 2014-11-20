@@ -145,8 +145,9 @@ app.views.AspectMembershipBlueprint = Backbone.View.extend({
       btn.removeClass('in_aspects');
       txt = Diaspora.I18n.t('aspect_dropdown.toggle.zero');
     } else {
-      btn.addClass('in_aspects');
+      btn.addClass('in_aspects btn btn-xs btn-default');
       txt = this._pluralSummaryTxt(aspects_cnt);
+      
     }
 
     btn.text(txt + ' ▼');

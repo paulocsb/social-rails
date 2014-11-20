@@ -58,6 +58,8 @@ module Diaspora
       jquery.js
       jquery_ujs.js
       jquery-textchange.js
+      jquery.autocomplete-custom.js
+      jquery.autoSuggest.custom.js
       mailchimp.js
       main.js
       mobile.js
@@ -67,6 +69,8 @@ module Diaspora
       publisher.js
       templates.js
       validation.js
+      bootstrap-select.js
+      fontawesome.js
 
       blueprint.css
       bootstrap.css
@@ -78,9 +82,6 @@ module Diaspora
       mobile/mobile.css
       new-templates.css
       rtl.css
-
-      bootstrap-select.js
-      fontawesome.js
     }
 
     # bootstrap-responsive.css

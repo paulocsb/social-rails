@@ -331,7 +331,8 @@
     margin: 0;
     padding: .4em .3em 3px;
     position: absolute !important;
-    right: 30px;
+    // right: 30px;
+    right: 5px;
     cursor: pointer;
     i {
       @include opacity(0.4);

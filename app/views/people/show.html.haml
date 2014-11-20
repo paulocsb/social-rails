@@ -26,13 +26,7 @@
             .innerAll.pull-left.stats-box
           .clearfix
 
-      / .span3
-      /   #profile
-      /     -# here be JS
-
       .col-lg-7.col-md-6.stream-profile
-        / .profile_header
-        /   -# more JS
 
         .stream_container
 
@@ -44,9 +38,6 @@
 
           #paginate
             %span.loader.hidden
-
-        / %a{:id=>"back-to-top", :title=>"#{t('layouts.application.back_to_top')}", :href=>"#"}
-        /   &#8679;
 
 -if user_signed_in? && @person
   #new_status_message_pane

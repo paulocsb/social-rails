@@ -32,8 +32,8 @@
               #locator{:title => t('shared.publisher.get_location')}
                 %i.entypo.fa.fa-map-marker{:class => "publisher_image"}
 
-              #file-upload{:title => t('shared.publisher.upload_photos')}
-                %i.entypo.fa.fa-camera{:class => "publisher_image"}
+              -##file-upload{:title => t('shared.publisher.upload_photos')}
+              -#  %i.entypo.fa.fa-camera{:class => "publisher_image"}
 
             = hidden_field :location, :coords
           #location_container

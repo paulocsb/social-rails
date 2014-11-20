@@ -10,28 +10,26 @@
 
 .container-fluid#tags_show
   .row-fluid
-    .span3.offset1
-      %h3
-        = t('people', :count => @stream.tagged_people_count)
+    .container.container-margin-top
+      .col-md-4.offset1
+        %h3
+          = t('people', :count => @stream.tagged_people_count)
 
-      .side_stream.stream
-        = render :partial => 'people/index', :locals => {:people => @stream.tagged_people}
+        .side_stream.stream
+          = render :partial => 'people/index', :locals => {:people => @stream.tagged_people}
 
-    .span7
-      .stream_container
-        #author_info
-          %h2
-            = @stream.display_tag_name
+      .col-md-8.col-md-8-left
+        .stream_container
+          #author_info
+            %h2
+              = @stream.display_tag_name
 
-        - if current_user
-          = render 'publisher/publisher', :selected_aspects => @stream.aspect_ids, :aspect_ids => @stream.aspect_ids, :aspect => @stream.aspect
+          - if current_user
+            = render 'publisher/publisher', :selected_aspects => @stream.aspect_ids, :aspect_ids => @stream.aspect_ids, :aspect => @stream.aspect
 
-        %hr
+          %hr
 
-        #main_stream.stream
+          #main_stream.stream
 
-        #paginate
-          %span.loader.hidden
-
-      %a{:id=>"back-to-top", :title=>"#{t('layouts.application.back_to_top')}", :href=>"#"}
-        &#8679;
+          #paginate
+            %span.loader.hidden
