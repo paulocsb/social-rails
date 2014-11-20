@@ -32,7 +32,7 @@
         return Diaspora.I18n.t("search_for", row);
       } else {
 				if (row.avatar) {        
-					return "<img src='"+ row.avatar +"' class='avatar'/>" + row.name;
+					return "<img src='"+ row.avatar +"' class='avatar img-circle'/>" + row.name;
 				} else {
 					return row.name;				
 				}

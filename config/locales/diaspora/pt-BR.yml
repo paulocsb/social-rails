@@ -63,7 +63,7 @@ pt-BR:
       correlations_count: "Contas similares:"
     stats:
       2weeks: "2 Semanas"
-      50_most: "50 Tags Mais Populares"
+      50_most: "50 Hashtags Mais Populares"
       comments:
         one: "%{count} comentário"
         other: "%{count} comentários"
@@ -81,7 +81,7 @@ pt-BR:
         one: "%{count} compartilhamento"
         other: "%{count} compartilhamentos"
         zero: "%{count} compartilhamento"
-      tag_name: "Nome da tag: <b>%{name_tag}</b> Contagem: <b>%{count_tag}</b>"
+      tag_name: "Nome da hashtag: <b>%{name_tag}</b> Contagem: <b>%{count_tag}</b>"
       usage_statistic: "Estatísticas de uso"
       users:
         one: "%{count} usuário"
@@ -151,7 +151,7 @@ pt-BR:
     aspect_stream:
       make_something: "Faça algo"
       stay_updated: "Fique Atualizado"
-      stay_updated_explanation: "Seu fluxo é preenchido com todos os seus contatos, tags que você segue e as mensagens de alguns membros criativos da comunidade."
+      stay_updated_explanation: "Seu fluxo é preenchido com todos os seus contatos, hashtags que você segue e as mensagens de alguns membros criativos da comunidade."
     contacts_not_visible: "Contatos neste aspecto não serão capazes de ver uns aos outros."
     contacts_visible: "Contatos nesse aspecto serão capazes de ver uns aos outros."
     create:
@@ -210,7 +210,7 @@ pt-BR:
         learn_more: "Saiba mais"
         title: "Dê boas vindas aos novatos"
       no_contacts: "Nenhum contato"
-      no_tags: "+ Procurar uma tag para seguir"
+      no_tags: "+ Procurar uma hashtag para seguir"
       people_sharing_with_you: "Pessoas compartilhando com você"
       post_a_message: "publicar uma mensagem >>"
       services:
@@ -359,7 +359,7 @@ pt-BR:
     post_not_public: "A publicação que está tentando visualizar não é pública!"
     post_not_public_or_not_exist: "A publicação que você está tentando ver não é pública, ou não existe!"
   fill_me_out: "Preencha"
-  find_people: "Encontrar pessoas ou #tags"
+  find_people: "Encontrar pessoas ou #hashtags"
   help:
     account_and_data_management:
       close_account_a: "Vá até o final de sua página de configurações e clique no botão Cancelar Conta."
@@ -445,10 +445,10 @@ pt-BR:
       subscribe_feed_q: "Posso subscrever à publicação pública de alguém com um leitor de feed?"
       title: "Miscelânea"
     pods:
-      find_people_a: "Convide seus amigos utilizando o link \"Por email\" na barra lateral. Siga #tags para descobrir outros que compartilhem de seus interesses, e adicione a algum aspecto aqueles que publicam coisas que interessam a você. Grite que você é #novato em uma publicação."
+      find_people_a: "Convide seus amigos utilizando o link \"Por email\" na barra lateral. Siga #hashtags para descobrir outros que compartilhem de seus interesses, e adicione a algum aspecto aqueles que publicam coisas que interessam a você. Grite que você é #novato em uma publicação."
       find_people_q: "Eu acabei de me associar ao pod, como eu posso encontrar pessoas com quem eu possa compartilhar?"
       title: "Pods"
-      use_search_box_a: "Se você conhece a Accademicos ID completa dessas pessoas (ex.: nomedousuario@nomedopod.org), você pode encontrá-las buscando diretamente pelas IDs. Se você está no mesmo pod, você pode buscar apenas pelo nomedousuario. Uma alternativa é buscar por elas através do nome de perfil (o nome que você vê na tela). Se uma busca não funciona na primeira vez, tente novamente."
+      use_search_box_a: "Se você conhece a Accademicos ID completa dessas pessoas (ex.: nomedousuario@accademicos.com), você pode encontrá-las buscando diretamente pelas IDs. Se você está no mesmo pod, você pode buscar apenas pelo nomedousuario. Uma alternativa é buscar por elas através do nome de perfil (o nome que você vê na tela). Se uma busca não funciona na primeira vez, tente novamente."
       use_search_box_q: "Como eu utilizo a caixa de busca para encontrar pessoas em particular?"
       what_is_a_pod_a: "Um pod é um servidor executando o software Accademicos e conectado à rede Accademicos. \"Pod\" é uma metáfora referindo-se às vagens nas plantas que contém sementes, da mesma maneira que um servidor contém um número de contas de usuários. Existem muitos pods diferentes. Você pode adicionar amigos de outros pods e se comunicar com eles. (Você pode pensar de um pod Accademicos como sendo similar a um provedor de email: existem pods públicos, pods privados, e com algum esforço você pode até mesmo rodar o seu próprio)."
       what_is_a_pod_q: "O que é um pod?"
@@ -476,7 +476,7 @@ pt-BR:
       size_of_images_q: "Posso personalizar o tamanho das imagens em publicações ou comentários?"
       stream_full_of_posts_a1: "Seu fluxo é composto de três tipos de publicações:"
       stream_full_of_posts_li1: "Publicações de pessoas com quem você está compartilhando, que se dividem em dois tipos: publicações públicas, e publicações limitadas compartilhadas com um aspecto do qual você faz parte. Para remover essas publicações, simplesmente pare de compartilhar com a pessoa."
-      stream_full_of_posts_li2: "Publicações públicas contendo uma das tags que você segue. Para remover estas, pare de seguir a tag."
+      stream_full_of_posts_li2: "Publicações públicas contendo uma das hashtags que você segue. Para remover estas, pare de seguir a hashtag."
       stream_full_of_posts_li3: "Publicações públicas feitas por pessoas listadas no Destaque da Comunidade. Estas podem ser removidas desmarcando a opção \"Mostrar Destaque da Comunidade no seu Fluxo?\" na aba Conta de suas Configurações."
       stream_full_of_posts_q: "Por que meu fluxo está cheio de publicações de pessoas as quais eu não conheço e com quem eu não compartilho?"
       title: "Publicações e publicar"
@@ -504,7 +504,7 @@ pt-BR:
       deselect_aspect_posting_a: "Desselecionar aspectos não afeta uma publicação pública. Esta apenas irá aparecer nos fluxos de todos os seus contatos. Para tornar uma publicação visível somente para aspectos específicos, você precisa selecionar os aspectos a partir do botão abaixo do editor."
       deselect_aspect_posting_q: "O que acontece quando eu desseleciono um ou mais aspectos ao fazer uma publicação no modo público?"
       find_public_post_a: |-
-          Suas publicações públicas aparecerão nos fluxos de qualquer pessoa que te seguir. Se você incluiu #tags na sua publicação pública, quaisquer pessoas seguindo essas tags encontrarão sua publicação nos fluxos delas. Toda publicação pública também tem um URL específico que qualquer um pode ver, mesmo que eles não estejam logados - além disso, publicações públicas podem ter uma ligação direta a partir do Twitter, blogs, etc.
+          Suas publicações públicas aparecerão nos fluxos de qualquer pessoa que te seguir. Se você incluiu #hashtags na sua publicação pública, quaisquer pessoas seguindo essas hashtags encontrarão sua publicação nos fluxos delas. Toda publicação pública também tem um URL específico que qualquer um pode ver, mesmo que eles não estejam logados - além disso, publicações públicas podem ter uma ligação direta a partir do Twitter, blogs, etc.
           Publicações públicas podem também ser indexadas por mecanismos de buscas.
       find_public_post_q: "Como outras pessoas podem encontrar minhas publicações no modo público?"
       see_comment_reshare_like_a: |-
@@ -516,9 +516,9 @@ pt-BR:
       who_sees_post_q: "Quando eu publico alguma coisa no modo público, quem pode ver?"
     public_profiles:
       title: "Perfis públicos"
-      what_do_tags_do_a: "Elas ajudam pessoas a conhecer você. Sua foto de perfil aparecerá do lado esquerdo das páginas de tags particulares, junto com alguém mais que tenha essas tags em seus perfis públicos."
-      what_do_tags_do_q: "Para que servem as tags no meu perfil público?"
-      whats_in_profile_a: "Seu nome, as cinco tags que você escolheu para se descrever, e sua foto. São as opções que estão no topo da seção da página de edição do perfil. Você pode tornar esta informação de perfil identificável ou anônima, como preferir. Sua página de perfil também mostra quaisquer publicações de modo público que você tenha feito."
+      what_do_tags_do_a: "Elas ajudam pessoas a conhecer você. Sua foto de perfil aparecerá do lado esquerdo das páginas de hashtags particulares, junto com alguém mais que tenha essas hashtags em seus perfis públicos."
+      what_do_tags_do_q: "Para que servem as hashtags no meu perfil público?"
+      whats_in_profile_a: "Seu nome, as cinco hashtags que você escolheu para se descrever, e sua foto. São as opções que estão no topo da seção da página de edição do perfil. Você pode tornar esta informação de perfil identificável ou anônima, como preferir. Sua página de perfil também mostra quaisquer publicações de modo público que você tenha feito."
       whats_in_profile_q: "O que está no meu perfil público?"
       who_sees_profile_a: "Qualquer usuário logado em Accademicos, assim como toda a internet, podem vê-lo. Cada perfil tem um URL direto, então ele pode ter uma ligação direta a partir de sites externos. O perfil público pode ser indexado por mecanismos de busca."
       who_sees_profile_q: "Quem vê o meu perfil público?"
@@ -550,16 +550,16 @@ pt-BR:
       title: "Compartilhando"
     tags:
       filter_tags_a: "Ainda não é possível diretamente através de Accademicos, mas algumas %{third_party_tools} tem sido escritas para poder prover isto."
-      filter_tags_q: "Como posso filtrar/excluir algumas tags de meu fluxo?"
-      followed_tags_a: "Depois de buscar por uma tag você pode clicar no botão no topo da página de tag para \"seguir\" aquela tag. Então ela aparecerá na sua lista de tags seguidas, à esquerda. Clicando em uma de suas tags seguidas leva você àquela página de tag, então você pode ver publicações recentes contendo aquela tag. Clique no #Seguindo Tags para ver um fluxo de publicações que incluem qualquer uma daquelas tags seguidas por você. "
-      followed_tags_q: "O que é \"#Seguindo Tags\" e como eu sigo uma tag?"
-      people_tag_page_a: "São as pessoas que listaram aquela tag para descrevê-las no perfil público delas."
-      people_tag_page_q: "Quem são as pessoas listadas no lado esquerdo da página de tag?"
-      tags_in_comments_a: "Uma tag adicionada a um comentário ainda aparecerá como uma ligação para aquela página de tag, mas não fará que aquela publicação (ou comentário) apareça naquela página de tag. Isto somente funciona para tags em publicações."
-      tags_in_comments_q: "Posso colocar tags em comentários ou apenas em publicações?"
-      title: "Tags"
-      what_are_tags_for_a: "Tags são uma maneira de categorizar uma publicação, normalmente por tópico. Buscando por uma tag mostra todas as publicações com aquela tag que você pode ver (ambas publicações públicas e privadas). Isso possibilita que pessoas que estão interessadas em um determinado tópico encontrem publicações públicas sobre este tópico."
-      what_are_tags_for_q: "Para que servem as tags?"
+      filter_tags_q: "Como posso filtrar/excluir algumas hashtags de meu fluxo?"
+      followed_tags_a: "Depois de buscar por uma hashtag você pode clicar no botão no topo da página de hashtag para \"seguir\" aquela hashtag. Então ela aparecerá na sua lista de hashtags seguidas, à esquerda. Clicando em uma de suas hashtags seguidas leva você àquela página de hashtag, então você pode ver publicações recentes contendo aquela hashtag. Clique no #Seguindo Hashtags para ver um fluxo de publicações que incluem qualquer uma daquelas hashtags seguidas por você. "
+      followed_tags_q: "O que é \"#Seguindo Hashtags\" e como eu sigo uma hashtag?"
+      people_tag_page_a: "São as pessoas que listaram aquela hashtag para descrevê-las no perfil público delas."
+      people_tag_page_q: "Quem são as pessoas listadas no lado esquerdo da página de hashtag?"
+      tags_in_comments_a: "Uma hashtag adicionada a um comentário ainda aparecerá como uma ligação para aquela página de hashtag, mas não fará que aquela publicação (ou comentário) apareça naquela página de hashtag. Isto somente funciona para hashtags em publicações."
+      tags_in_comments_q: "Posso colocar hashtags em comentários ou apenas em publicações?"
+      title: "Hashtags"
+      what_are_tags_for_a: "Hashtags são uma maneira de categorizar uma publicação, normalmente por tópico. Buscando por uma hashtag mostra todas as publicações com aquela hashtag que você pode ver (ambas publicações públicas e privadas). Isso possibilita que pessoas que estão interessadas em um determinado tópico encontrem publicações públicas sobre este tópico."
+      what_are_tags_for_q: "Para que servem as hashtags?"
     third_party_tools: "ferramentas de terceiros"
     title_header: "Ajuda"
     tutorial: "tutorial"
@@ -804,7 +804,7 @@ pt-BR:
     add_contact:
       invited_by: "você foi convidado por"
     add_contact_small:
-      add_contact_from_tag: "adicionar contato de tag"
+      add_contact_from_tag: "adicionar contato de hashtag"
     aspect_list:
       edit_membership: "editar participação no aspecto"
     few: "%{count} pessoas"
@@ -814,11 +814,11 @@ pt-BR:
       results_for: " resultados para %{params}"
     index:
       couldnt_find_them: "Não foi possível encontrá-los?"
-      looking_for: "Buscando publicações com a tag %{tag_link}?"
+      looking_for: "Buscando publicações com a hashtag %{tag_link}?"
       no_one_found: "...e ninguém foi encontrado."
       no_results: "Ei! Você precisa procurar por alguma coisa."
       results_for: "Resultado da busca por %{search_term}"
-      search_handle: "Para que você encontre seus amigos, use a Accademicos ID deles (nomedeusuario@nomedopod.org)."
+      search_handle: "Para que você encontre seus amigos, tente usar o email deles na busca. Ex:(nomedeusuario@accademicos.com)"
       searching: "pesquisando, por favor tenha paciência..."
       send_invite: "Nada ainda? Envie um convite!"
     many: "%{count} pessoas"
@@ -857,7 +857,7 @@ pt-BR:
     sub_header:
       add_some: "adicione algo"
       edit: "editar"
-      you_have_no_tags: "você não tem tags!"
+      you_have_no_tags: "você não tem hashtags!"
     two: "%{count} pessoas"
     webfinger:
       fail: "Desculpe, não conseguimos encontrar %{handle}."
@@ -920,7 +920,7 @@ pt-BR:
       last_name: "Sobrenome"
       nsfw_check: "Marque tudo que eu compartilho como NSFW"
       nsfw_explanation: "NSFW ('conteúdo inapropriado') é um padrão de autogovernança da comunidade Accademicos para conteúdos que podem não ser adequados para serem vistos enquanto estiver no trabalho. Se você planeja compartilhar esse tipo de material frequentemente, por favor marque esta opção, então tudo aquilo que você compartilhar ficará oculto nos fluxos das pessoas, a menos que elas escolham vê-los."
-      nsfw_explanation2: "Se você escolher não selecionar esta opção, por favor adicione a tag #nsfw toda vez que você compartilhar esse tipo de material."
+      nsfw_explanation2: "Se você escolher não selecionar esta opção, por favor adicione a hashtag #nsfw toda vez que você compartilhar esse tipo de material."
       update_profile: "Atualizar perfil"
       your_bio: "Sobre você"
       your_birthday: "Data de nascimento"
@@ -930,7 +930,7 @@ pt-BR:
       your_photo: "Sua foto"
       your_private_profile: "Seu perfil privado"
       your_public_profile: "Seu perfil público"
-      your_tags: "Descreva você mesmo em 5 #tags"
+      your_tags: "Descreva você mesmo em 5 #hashtags"
       your_tags_placeholder: "Ex: #Accademicos #cinema #musica #cafe"
     update:
       failed: "Falhou ao atualizar o perfil."
@@ -1184,11 +1184,11 @@ pt-BR:
       title: "Publicações comentadas"
     community_spotlight_stream: "Destaque da Comunidade"
     followed_tag:
-      add_a_tag: "Adicionar uma tag"
-      contacts_title: "Pessoas que curtem estas tags"
+      add_a_tag: "Adicionar uma hashtag"
+      contacts_title: "Pessoas que curtem estas hashtags"
       follow: "Seguir"
-      title: "#Seguindo Tags"
-    followed_tags_stream: "#Seguindo Tags"
+      title: "#Seguindo Hashtags"
+    followed_tags_stream: "#Seguindo Hashtags"
     like_stream:
       contacts_title: "Pessoas cujas publicações você curtiu"
       title: "Publicações curtidas"
@@ -1203,13 +1203,13 @@ pt-BR:
       contacts_title: "Publicadores Recentes"
       title: "Atividade Pública"
     tags:
-      contacts_title: "Pessoas que seguem essa tag"
+      contacts_title: "Pessoas que seguem essa hashtag"
       tag_prefill_text: "Uma coisa sobre %{tag_name} é... "
-      title: "Publicações com a tag: %{tags}"
+      title: "Publicações com a hashtag: %{tags}"
   tag_followings:
     create:
-      failure: "Falha ao seguir #%{name}. Você já está seguindo esta tag?"
-      none: "Você não pode seguir uma tag em branco!"
+      failure: "Falha ao seguir #%{name}. Você já está seguindo esta hashtag?"
+      none: "Você não pode seguir uma hashtag em branco!"
       success: "Sucesso! Você está seguindo #%{name}."
     destroy:
       failure: "Não foi possível parar de seguir #%{name}. Quem sabe você já tenha feito isso?"
@@ -1223,7 +1223,7 @@ pt-BR:
         zero: "Seguido por ninguém"
       following: "Seguindo #%{tag}"
       nobody_talking: "Ninguém está falando sobre %{tag} ainda."
-      none: "A tag vazia não existe!"
+      none: "A hashtag vazia não existe!"
       people_tagged_with: "Pessoas marcadas com %{tag}"
       posts_tagged_with: "Publicações marcadas com #%{tag}"
       stop_following: "Parar de seguir #%{tag}"
@@ -1287,7 +1287,7 @@ pt-BR:
       connect_to_facebook: "Podemos acelerar um pouco as coisas pelo %{link} para o Accademicos. Isso vai recuperar seu nome e foto, habilitando a publicação cruzada."
       connect_to_facebook_link: "Associando sua conta do Facebook"
       hashtag_explanation: "As hashtags permitem a você compartilhar e acompanhar os seus interesses. Elas também são uma ótima maneira de encontrar novas pessoas em Accademicos."
-      hashtag_suggestions: "Tente tags como #arte, #cinema, #gif, etc."
+      hashtag_suggestions: "Tente hashtags como #arte, #cinema, #gif, etc."
       saved: "Salvo!"
       well_hello_there: "Bem, olá!"
       what_are_you_in_to: "Onde você está?"

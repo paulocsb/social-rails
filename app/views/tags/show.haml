@@ -11,21 +11,26 @@
 .container-fluid#tags_show
   .row-fluid
     .container.container-margin-top
-      .col-md-4.offset1
-        %h3
-          = t('people', :count => @stream.tagged_people_count)
+      -#.col-md-4.offset1
+      -#  %h3
+          =# t('people', :count => @stream.tagged_people_count)
+      .span-4#leftNavBar
+        #home_user_badge
+          = owner_image_link
+          %h4
+            = link_to current_user.first_name, local_or_remote_person_path(current_user.person)
 
         .side_stream.stream
           = render :partial => 'people/index', :locals => {:people => @stream.tagged_people}
 
-      .col-md-8.col-md-8-left
-        .stream_container
+      .span-13.append-0
+        #aspect_stream_container.stream_container
           #author_info
             %h2
               = @stream.display_tag_name
 
-          - if current_user
-            = render 'publisher/publisher', :selected_aspects => @stream.aspect_ids, :aspect_ids => @stream.aspect_ids, :aspect => @stream.aspect
+          -# if current_user
+            =# render 'publisher/publisher', :selected_aspects => @stream.aspect_ids, :aspect_ids => @stream.aspect_ids, :aspect => @stream.aspect
 
           %hr
 
@@ -33,3 +38,6 @@
 
           #paginate
             %span.loader.hidden
+
+      .span-5.rightBar.last
+        = render 'shared/right_sections'

@@ -39,6 +39,7 @@
 /* conversations */
 @import 'conversations';
 @import 'facebox';
+@import 'vendor/facebox';
 
 /* publisher */
 @import 'publisher';
@@ -61,6 +62,9 @@
 @import 'invitations';
 @import 'profile';
 
+/* sidebar */
+@import 'new_styles/sidebar';
+
 /* stream */
 @import 'tag';
 @import 'stream-faces';
@@ -71,3 +75,7 @@
 /* contacts */
 @import 'contacts';
 @import 'leftnavbar';
+
+/* accademicos */
+@import 'new_styles/accademicos';
+

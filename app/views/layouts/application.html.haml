@@ -10,8 +10,8 @@
 
     %meta{:charset => 'utf-8'}/
     %meta{"http-equiv"=>"Content-Type", :content=>"text/html; charset=utf-8"}/
-    %meta{:name => "description", :content => "Accademicos"}/
-    %meta{:name => "author", :content => "Accademicos, BR."}/
+    %meta{:name => "description", :content => "#{AppConfig.settings.pod_name}"}/
+    %meta{:name => "author", :content => "#{AppConfig.settings.pod_name}, BR."}/
     %meta{:property => "og:site_name", :content => "#{AppConfig.settings.pod_name}"}/
 
     %link{:rel => 'shortcut icon', :href => "#{image_path('favicon.png')}" }

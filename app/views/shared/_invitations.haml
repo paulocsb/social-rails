@@ -1,7 +1,6 @@
 = t('.share_this')
 = invite_link(current_user.invitation_code)
-.btn.btn-link{ 'data-toggle' => 'modal', 'data-target' => '#invitationsModal'}
-  = t('.by_email')
+= link_to t('shared.invitations.by_email'), new_user_invitation_path(blueprint: true), :title => t('shared.invitations.invite_someone'), :rel => 'facebox', :style => 'margin-top: 10px; display: block;'
 
 = render 'shared/modal',
     :path => new_user_invitation_path, 
