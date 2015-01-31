@@ -1002,6 +1002,10 @@ ul#press_logos {
   margin: {
     top: 5px;
   };
+  a.toggle_post_comments {
+    color: $blue;
+    font-size: 0.8em;
+  }
 }
 
 .show_comments,
